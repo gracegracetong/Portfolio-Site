@@ -1,0 +1,124 @@
+// NAVIGATION
+
+// General 
+nav ul {
+	list-style: none;
+	padding-left: 0;
+
+	a {		
+		// text-transform: uppercase;
+		color: $mainColor;
+		font: {
+			family: $navFont;
+			size: 1em;
+		} 
+	}
+	
+}
+
+header {
+	padding-top: 1em;
+
+	// display: flex;
+	// flex-flow: row wrap;
+	// align-items: stretch;
+	// margin-left: auto; 
+	// margin-right: auto;
+	// align-items: baseline;
+	// padding: 30px 0 20px;
+
+	// align-items: flex-end;
+	// padding-bottom: 0;
+
+
+	// .nav-wrapper {
+	// 	background: red;
+	// 	position: fixed;
+	// }
+
+	// .logo {
+	// 	flex: 1;
+	// }
+
+	// .main-nav {
+	// 	justify-content: space-between;
+	// 	// flex: 5;
+	// }
+
+	// .main-nav ul {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// }
+
+	// .main-nav a {
+	// 	margin-left: 15px;
+	// }
+	
+}
+
+
+// Main Navigation
+.nav-wrapper {
+	margin-top: 1em;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header .logo {
+	flex: 1;
+	img {
+		max-width: 3em;
+	}
+}
+
+.btnMenu {
+	font: {
+		family: $navFont;
+		size: 1em;
+		weight: 500;
+	}
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+
+	:focus {
+		outline: none;
+	}
+}
+
+.show-mobile-nav .main-nav {
+	// Opened 
+	height: 120px;
+}
+
+.main-nav {
+	// Closed  
+	height: 0;
+	overflow: hidden;
+	transition: height 0.4s ease;
+	width: 100%;
+	flex: 0 0 100%;
+	margin-top: 10px;
+	padding-right: 0;
+
+	// ul {
+	// 	flex-direction: column;
+	// }
+
+	a {
+		width: 100%;
+		margin-left: 0;
+		font-size: 1.5em;
+		padding: 8px 0 1px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

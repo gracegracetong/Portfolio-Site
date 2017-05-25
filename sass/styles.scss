@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@import "normalize";
+@import "variables";
+@import "navigation";
+
+
+// Accessibility
+// Text for Screen Readers
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: white;
+	clip: auto !important;
+	color: black;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; 
+}
+
+
+// General Styles
+::selection {
+    background: $secondaryColor-light;
+}
+
+*:focus {
+	outline: 3px solid $secondaryColor-dark;
+}
+
+.centered {
+	margin: 0 auto;
+	padding: 0 1.2em;
+}
+
+h1,h2 {
+	font: {
+		family: $headFont;
+		weight: 500;
+	}
+	line-height: 1.4;
+}
+
+
+p {
+	font: {
+		family: $bodyFont;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+// button:focus {
+// 	outline: 3px solid $secondaryColor-dark;
+// }
+
+
+
+
+
+
