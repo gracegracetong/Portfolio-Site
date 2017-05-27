@@ -170,6 +170,15 @@ td,
 th {
   padding: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%; }
+
 nav ul {
   list-style: none;
   padding-left: 0; }
@@ -178,31 +187,33 @@ nav ul {
     font-family: Work Sans, sans-serif;
     font-size: 1em; }
 
-header {
-  padding-top: 1em; }
-
 .nav-wrapper {
-  margin-top: 1em;
-  display: flex;
-  flex-flow: row wrap; }
-
-header .logo {
-  flex: 1; }
-  header .logo img {
-    max-width: 3em; }
-
-.btnMenu {
-  font-family: Work Sans, sans-serif;
-  font-size: 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  border: none;
-  background-color: transparent; }
-  .btnMenu :focus {
-    outline: none; }
+  padding-top: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); }
+  .nav-wrapper .logo {
+    margin-left: 1.2em;
+    float: left;
+    width: 4em;
+    height: 2em;
+    display: block;
+    background-image: url("../images/logo-6.svg");
+    background-repeat: no-repeat; }
+    .nav-wrapper .logo:hover {
+      background-image: url("../images/logo-6-hover.svg");
+      background-position: 0 7px; }
+  .nav-wrapper .main-nav {
+    padding: 0 1.2em;
+    text-align: center; }
+  .nav-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .show-mobile-nav .main-nav {
-  height: 120px; }
+  height: 150px; }
 
 .main-nav {
   height: 0;
@@ -210,13 +221,23 @@ header .logo {
   transition: height 0.4s ease;
   width: 100%;
   flex: 0 0 100%;
-  margin-top: 10px;
   padding-right: 0; }
+  .main-nav li {
+    margin-top: 1em; }
   .main-nav a {
     width: 100%;
     margin-left: 0;
-    font-size: 1.5em;
-    padding: 8px 0 1px; }
+    font-size: 1.3em;
+    font-weight: 500; }
+
+.btnMenu {
+  float: right;
+  padding: 0 1.2em;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  border: none;
+  background-color: transparent; }
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -247,7 +268,7 @@ header .logo {
   background: #acffeb; }
 
 *:focus {
-  outline: 3px solid #69ffdb; }
+  outline: 1px dotted #69ffdb; }
 
 .centered {
   margin: 0 auto;
@@ -262,6 +283,19 @@ p {
   font-family: Work Sans, sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+
+.view-all {
+  border: 2px solid #92ffe5;
+  padding: 0.5em;
+  color: #000000;
+  font-family: Work Sans, sans-serif;
+  font-weight: 500; }
+  .view-all:hover {
+    background-color: #acffeb; }
+
+.intro {
+  padding-top: 5em; }
 
 /*# sourceMappingURL=styles.css.map */

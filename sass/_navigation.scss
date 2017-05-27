@@ -16,79 +16,59 @@ nav ul {
 	
 }
 
-header {
-	padding-top: 1em;
-
-	// display: flex;
-	// flex-flow: row wrap;
-	// align-items: stretch;
-	// margin-left: auto; 
-	// margin-right: auto;
-	// align-items: baseline;
-	// padding: 30px 0 20px;
-
-	// align-items: flex-end;
-	// padding-bottom: 0;
-
-
-	// .nav-wrapper {
-	// 	background: red;
-	// 	position: fixed;
-	// }
-
-	// .logo {
-	// 	flex: 1;
-	// }
-
-	// .main-nav {
-	// 	justify-content: space-between;
-	// 	// flex: 5;
-	// }
-
-	// .main-nav ul {
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// }
-
-	// .main-nav a {
-	// 	margin-left: 15px;
-	// }
-	
-}
-
 
 // Main Navigation
 .nav-wrapper {
-	margin-top: 1em;
-	display: flex;
-	flex-flow: row wrap;
-}
+	padding-top: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
 
-header .logo {
-	flex: 1;
-	img {
-		max-width: 3em;
+	// ....version of logo without hover img change...
+	// .logo {
+	// 	padding: 0 1.2em;
+	// 	img {
+	// 		max-width: 4em;
+	// 	}
+	// 	:hover {
+
+	// 	}
+	// }
+
+	.logo {
+		margin-left: 1.2em;
+		float: left;
+		width: 4em;
+		height: 2em;
+		display: block;
+		background-image: url("../images/logo-6.svg");
+		background-repeat: no-repeat;
+		&:hover {
+			background-image: url("../images/logo-6-hover.svg");
+			background-position: 0 7px;
+		}
+	}
+
+	.main-nav {
+		padding: 0 1.2em;
+		text-align: center;
+	}
+
+	// clearfix
+	&:after {
+		content: "";
+  		display: table;
+  		clear: both;
 	}
 }
 
-.btnMenu {
-	font: {
-		family: $navFont;
-		size: 1em;
-		weight: 500;
-	}
-	text-transform: uppercase;
-	border: none;
-	background-color: transparent;
 
-	:focus {
-		outline: none;
-	}
-}
 
+// Toggle Mobile Nav
 .show-mobile-nav .main-nav {
 	// Opened 
-	height: 120px;
+	height: 150px;
 }
 
 .main-nav {
@@ -98,20 +78,43 @@ header .logo {
 	transition: height 0.4s ease;
 	width: 100%;
 	flex: 0 0 100%;
-	margin-top: 10px;
 	padding-right: 0;
 
-	// ul {
-	// 	flex-direction: column;
-	// }
+	li {
+		margin-top: 1em;
+	}
 
 	a {
 		width: 100%;
 		margin-left: 0;
-		font-size: 1.5em;
-		padding: 8px 0 1px;
+		font-size: 1.3em;
+		font-weight: 500;
 	}
 }
+
+
+
+.btnMenu {
+	float: right;
+	padding: 0 1.2em;
+	font: {
+		family: $navFont;
+		size: 1.1em;
+		weight: 500;
+	}
+	border: none;
+	background-color: transparent;
+	// &:before {
+	// 	content:"";
+	// 	position: absolute;
+	// 	width: 10%;
+	// 	bottom: 0;
+	// 	border-bottom: 2px solid $secondaryColor;
+	// }
+
+}
+
+
 
 
 

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "normalize";
+@import "resets";
 @import "variables";
 @import "navigation";
 
@@ -41,7 +41,7 @@
 }
 
 *:focus {
-	outline: 3px solid $secondaryColor-dark;
+	outline: 1px dotted $secondaryColor-dark;
 }
 
 .centered {
@@ -66,12 +66,29 @@ p {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
-// button:focus {
-// 	outline: 3px solid $secondaryColor-dark;
-// }
 
+// Buttons & Links
+.view-all {
+	border: 2px solid $secondaryColor;
+	padding: 0.5em;
+	color: $mainColor;
+	font: {
+		family: $navFont;
+		weight: 500;
+	}
+	&:hover {
+		background-color: $secondaryColor-light;
+	}
+}
+
+
+// Intro Section
+.intro {
+	padding-top: 5em;
+}
 
 
 

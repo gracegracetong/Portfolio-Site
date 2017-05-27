@@ -8,51 +8,70 @@
 	<link rel="stylesheet" href="styles/styles.css" type="text/css" media="all">
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900|Poppins:400,500,600,700|Work+Sans:200,300,400,500,600,700,800" rel="stylesheet">
 
-	<!-- DELETE UNUSED FONTS!!!!! -->
-	<!-- Muli & Works Sans similar (delete one) -->
+	<!-- DELETE UNUSED FONTS -->
+	<!-- Muli & Works Sans similar -->
 
 </head>
 
 <body>
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	
-	<header class="centered">
+	<header>
 
 		<div class="nav-wrapper">
-			<a href="index.html" class="logo">
-				<img src="images/logo-3.svg" alt="Grace Tong logo">
-			</a>
+			<!-- ...version of logo without img hover... -->
+			<!-- <a href="index.html" class="logo">
+				<img src="images/logo-6.svg" alt="Grace Tong logo">
+			</a> -->
+			<a href="index.html" class="logo"></a>
+			
 
 			<button class="btnMenu" role="button">menu</button>
 			
-			<nav class="main-nav" role="navigation">
+			<nav class="main-nav" id="mainNav" role="navigation">
 				<ul>
 					<li><a href="#">work</a></li>
 					<li><a href="#">about</a></li>
-					<li><a href="#">contact</a></li>
+					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
 		</div>
+
 		
 	</header>
 
-	<main class="centered">
+	<main class="centered" id="content" role="main">
 
-		<div class="intro">
+		<section class="intro" id="intro">
 			<h1>Hello, I'm Grace.</h1>
 			<h2>I am a front-end web designer & developer from Vancouver, B.C.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vero delectus aliquid rerum, expedita, laborum quidem cupiditate voluptates labore debitis <a href="http://google.ca">praesentium veniam</a> ut ullam voluptatibus dolores quod explicabo omnis eum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum quia, repudiandae libero unde perferendis quod ipsum esse aperiam modi doloribus amet reprehenderit autem! Ut cum libero sunt minus voluptatem.</p>
+			<p>Lorem ipsum dolor sit amet, <a href="http://google.ca">consectetur adipisicing</a> elit. Magnam vero delectus aliquid rerum, expedita, laborum quidem cupiditate voluptates labore debitis praesentium veniam ut ullam voluptatibus dolores quod explicabo omnis eum.</p>
+		</section>
+
+		<section id="featuredWork">
+			<h2>Check out some of my current work!</h2>
+
+			<a href="#" class="view-all">view all projects</a>
+
+		</section>
+
+		<section id="contact">
+			<h2>Get in Touch</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vero delectus aliquid rerum, expedita, laborum quidem cupiditate voluptates labore debitis praesentium veniam ut ullam voluptatibus dolores quod explicabo omnis eum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum quia, repudiandae libero unde perferendis quod ipsum esse aperiam modi doloribus amet reprehenderit autem! Ut cum libero sunt minus voluptatem.</p>
-		</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vero delectus aliquid rerum, expedita, laborum quidem cupiditate voluptates labore debitis praesentium veniam ut ullam voluptatibus dolores quod explicabo omnis eum.</p>
+			
+		</section>
+
 		
-
-
-
-
 
 	</main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://use.fontawesome.com/89a196152c.js"></script>
+
 </body>
 </html>
