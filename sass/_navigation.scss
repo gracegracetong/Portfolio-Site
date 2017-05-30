@@ -6,23 +6,25 @@ nav ul {
 	padding-left: 0;
 
 	a {		
-		// text-transform: uppercase;
 		color: $mainColor;
 		font: {
 			family: $navFont;
 			size: 1em;
 		} 
+
 	}
 	
 }
 
 
-// Main Navigation
+// Main navigation
 .nav-wrapper {
 	padding-top: 1em;
+	padding-bottom: 0.2em;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 999999;
 	background-color: rgba(255,255,255,0.9);
 
 	// ....version of logo without hover img change...
@@ -37,7 +39,6 @@ nav ul {
 	// }
 
 	.logo {
-		margin-left: 1.2em;
 		float: left;
 		width: 4em;
 		height: 2em;
@@ -46,13 +47,24 @@ nav ul {
 		background-repeat: no-repeat;
 		&:hover {
 			background-image: url("../images/logo-6-hover.svg");
-			background-position: 0 7px;
 		}
 	}
 
 	.main-nav {
-		padding: 0 1.2em;
 		text-align: center;
+	}
+
+	// Menu button
+	.btnMenu {
+		float: right;
+		padding: 0;
+		font: {
+			family: $navFont;
+			size: 1.1em;
+			weight: 500;
+		}
+		border: none;
+		background-color: transparent;
 	}
 
 	// clearfix
@@ -65,7 +77,7 @@ nav ul {
 
 
 
-// Toggle Mobile Nav
+// Toggle mobile nav
 .show-mobile-nav .main-nav {
 	// Opened 
 	height: 150px;
@@ -93,26 +105,6 @@ nav ul {
 }
 
 
-
-.btnMenu {
-	float: right;
-	padding: 0 1.2em;
-	font: {
-		family: $navFont;
-		size: 1.1em;
-		weight: 500;
-	}
-	border: none;
-	background-color: transparent;
-	// &:before {
-	// 	content:"";
-	// 	position: absolute;
-	// 	width: 10%;
-	// 	bottom: 0;
-	// 	border-bottom: 2px solid $secondaryColor;
-	// }
-
-}
 
 
 

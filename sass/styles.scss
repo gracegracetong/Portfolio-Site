@@ -6,7 +6,7 @@
 
 
 // Accessibility
-// Text for Screen Readers
+// Text for screen readers
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -35,7 +35,7 @@
 }
 
 
-// General Styles
+// General styles
 ::selection {
     background: $secondaryColor-light;
 }
@@ -44,17 +44,22 @@
 	outline: 1px dotted $secondaryColor-dark;
 }
 
-.centered {
-	margin: 0 auto;
-	padding: 0 1.2em;
-}
-
 h1,h2 {
 	font: {
 		family: $headFont;
 		weight: 500;
 	}
 	line-height: 1.4;
+}
+
+h2 {
+	font: {
+		size: 1.3em;
+	}
+}
+
+h3 {
+	margin: 0 auto;
 }
 
 
@@ -67,10 +72,27 @@ p {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color:$tertiaryColor-dark;
+}
+
+section {
+	padding-bottom: 1em;
+}
+
+.centered {
+	margin: 0 auto;
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+
+	@media (min-width: 768px) {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
 
 
-// Buttons & Links
+
+// Buttons & links
 .view-all {
 	border: 2px solid $secondaryColor;
 	padding: 0.5em;
@@ -79,18 +101,100 @@ a {
 		family: $navFont;
 		weight: 500;
 	}
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $secondaryColor-light;
+	}
+	
+}
+
+
+// Intro section
+.intro {
+	padding-top: 5em;
+
+	// p,h1,h2 {
+	// 	max-width: 570px;
+	// }
+
+	span {
+		position: relative;
+	}
+	span:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -4px;
+		left: 6px;
+		height: 18px;
+		width: 90%;
+		background: $secondaryColor-lightest;
+		z-index: -10;
+	}
+
+}
+
+
+// Project thumbnails section
+.grid {
+	padding-bottom: 2em;
+}
+
+.grid-sizer,
+.grid-item {
+	width: 100%;
+}
+
+.grid-item {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 0.4em;
+	background: $tertiaryColor-dark;
+	-webkit-backface-visibility: hidden;
+
+	img {	
+		display: block;
+		opacity: 1;
+		transform: scale(1);
+		transition: all 0.5s ease;
+	}
+
+	.text-overlay {
+		z-index: 500;
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: white;
+		text-align: center;
+		transition: all 0.5s ease;
+		opacity: 0;
+	}
+
+	&:hover,
+	&:focus {
+		img {
+			transform: scale(1.1);
+			opacity: 0.2;
+		}
+
+		.text-overlay {
+			opacity: 1;
+		}
 	}
 }
 
+// .white-bg {
+// 	box-shadow: 0 0 40px 5px rgba(100,100,100,0.3);
+// }
 
-// Intro Section
-.intro {
-	padding-top: 5em;
+
+// Footer
+footer {
+	padding-top: 4em;
+	padding-bottom: 2em;
 }
-
-
 
 
 
