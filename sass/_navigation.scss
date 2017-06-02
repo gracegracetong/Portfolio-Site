@@ -1,4 +1,5 @@
-// NAVIGATION
+/* Navigation
+--------------------------------------------------------- */
 
 // General 
 nav ul {
@@ -24,7 +25,7 @@ nav ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 999999;
+	z-index: 900;
 	background-color: rgba(255,255,255,0.9);
 
 	// ....version of logo without hover img change...
@@ -33,15 +34,12 @@ nav ul {
 	// 	img {
 	// 		max-width: 4em;
 	// 	}
-	// 	:hover {
-
-	// 	}
 	// }
 
 	.logo {
 		float: left;
-		width: 4em;
-		height: 2em;
+		width: 4.5em;
+		height: 2.3em;
 		display: block;
 		background-image: url("../images/logo-6.svg");
 		background-repeat: no-repeat;
@@ -50,21 +48,56 @@ nav ul {
 		}
 	}
 
-	.main-nav {
-		text-align: center;
-	}
-
 	// Menu button
 	.btnMenu {
 		float: right;
 		padding: 0;
+		margin-bottom: 12px;
 		font: {
 			family: $navFont;
-			size: 1.1em;
+			size: 1.2em;
 			weight: 500;
 		}
 		border: none;
 		background-color: transparent;
+
+		@media (min-width: $breakpointMobile){
+			display: none;
+			margin-bottom: 0;
+		}
+	}
+
+	.hamburger {
+	    display: inline-block;
+	    position: relative;
+	    top: -3px;
+	    right: -8px;
+	    margin-left: 2px;
+	    transform: translateX(-50%) translateY(-50%);
+	    width: 18px;
+	    height: 2px;
+	    background-color: #393939;
+	    transition: background-color 0.3s;
+	    list-style: none;
+	}
+
+	.hamburger::before,
+	.hamburger:after {
+	    content: '';
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    background-color: #393939;
+	    right: 0;
+	    transition: transform .3s, top .3s, background-color 0s, transform .3s;
+	}
+
+	.hamburger::before {
+	    top: -5px;
+	}
+
+	.hamburger::after {
+	    top: 5px;
 	}
 
 	// clearfix
@@ -76,34 +109,49 @@ nav ul {
 }
 
 
-
-// Toggle mobile nav
+// Toggle dropdown navigation (mobile)
 .show-mobile-nav .main-nav {
-	// Opened 
-	height: 150px;
+	// Open main nav
+	height: 200px;
 }
 
-.main-nav {
-	// Closed  
+.main-nav { 
 	height: 0;
 	overflow: hidden;
 	transition: height 0.4s ease;
 	width: 100%;
-	flex: 0 0 100%;
-	padding-right: 0;
+	text-align: center;
+
+	@media (min-width: $breakpointMobile){
+		float: right;
+		height: 35px;
+		width: 50%;
+		text-align: right;
+		ul {
+			margin: 0;
+		}
+	}
 
 	li {
-		margin-top: 1em;
+		margin-top: 1.5em;
+		@media (min-width: $breakpointMobile){
+			margin-top: 0;
+			display: inline-block;
+		}
 	}
 
 	a {
 		width: 100%;
 		margin-left: 0;
-		font-size: 1.3em;
+		font-size: 1.5em;
 		font-weight: 500;
+		@media (min-width: $breakpointMobile){
+			font-size: 1.2em;
+			margin-left: 1em;
+		}
 	}
-}
 
+}
 
 
 

@@ -2,33 +2,29 @@
 
 // Colors
 $mainColor: #000;
-$mainColor-light: lighten($mainColor, 3);
+$mainColor-light: lighten($mainColor, 20);
 
 $secondaryColor: #92ffe5;
 $secondaryColor-light: lighten($secondaryColor, 6);
 $secondaryColor-lightest: lighten($secondaryColor, 10);
-$secondaryColor-dark: darken($secondaryColor, 8);
+$secondaryColor-dark: darken($secondaryColor, 20);
 
 $tertiaryColor: #7B68EE;
 $tertiaryColor-light: lighten($tertiaryColor, 5);
-$tertiaryColor-dark: darken($tertiaryColor, 8);
+$tertiaryColor-dark: darken($tertiaryColor, 10);
 
 
 // gradient
 // $gradient: linear-gradient(to right, #ffafbd, #ffc3a0);
 
 
-
 // Typography
-$navFont: Poppins, sans-serif;
 $navFont: Work Sans, sans-serif;
-
-$headFont: Poppins, sans-serif;
 $headFont: Work Sans, sans-serif;
-
-
-$bodyFont: Muli, sans-serif;
 $bodyFont: Work Sans, sans-serif;
 
 
+// Breakpoints
+$breakpointMobile: 600px;
+$breakpointTablet: 768px;
 

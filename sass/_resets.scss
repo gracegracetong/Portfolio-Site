@@ -1,4 +1,6 @@
-// normalize
+/* Resets
+--------------------------------------------------------- */
+// Normalize
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -212,7 +214,7 @@ th {
 
 
 
-// box sizing reset 
+// Box Sizing Reset
 html {
   box-sizing: border-box;
 }
@@ -222,7 +224,7 @@ html {
 
 
 
-// responsive image reset
+// Responsive Image 
 img {
 	max-width: 100%;
 }

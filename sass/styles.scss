@@ -5,8 +5,8 @@
 @import "navigation";
 
 
-// Accessibility
-// Text for screen readers
+/* Accessibility
+--------------------------------------------------------- */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -35,13 +35,34 @@
 }
 
 
-// General styles
-::selection {
+/* General
+--------------------------------------------------------- */
+// ::-webkit-scrollbar {
+//     width: 8px;
+// }
+ 
+// ::-webkit-scrollbar-track {
+//     border-radius: 10px;
+// }
+ 
+// ::-webkit-scrollbar-thumb {
+//     background: black; 
+// }
+// ::-webkit-scrollbar-thumb:window-inactive {
+// 	background: black;
+// }
+
+::selection,
+::-moz-selection {
     background: $secondaryColor-light;
 }
 
 *:focus {
-	outline: 1px dotted $secondaryColor-dark;
+	outline: 1px dotted $tertiaryColor-light;
+}
+
+body {
+	max-width: 1920px;
 }
 
 h1,h2 {
@@ -50,18 +71,17 @@ h1,h2 {
 		weight: 500;
 	}
 	line-height: 1.4;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.4em;
+	margin-bottom: 0;
 }
 
 h2 {
-	font: {
-		size: 1.3em;
-	}
+	font-size: 1.6em;
 }
-
-h3 {
-	margin: 0 auto;
-}
-
 
 p {
 	font: {
@@ -81,46 +101,30 @@ section {
 
 .centered {
 	margin: 0 auto;
-	padding-left: 1.2em;
-	padding-right: 1.2em;
+	padding-left: 1em;
+	padding-right: 1em;
 
 	@media (min-width: 768px) {
-		padding-left: 2em;
-		padding-right: 2em;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 }
 
 
-
-// Buttons & links
-.view-all {
-	border: 2px solid $secondaryColor;
-	padding: 0.5em;
-	color: $mainColor;
-	font: {
-		family: $navFont;
-		weight: 500;
-	}
-	&:hover,
-	&:focus {
-		background-color: $secondaryColor-light;
-	}
-	
-}
-
-
-// Intro section
+/* Intro Section
+--------------------------------------------------------- */
 .intro {
 	padding-top: 5em;
 
-	// p,h1,h2 {
-	// 	max-width: 570px;
-	// }
+	p,h1,h2 {
+		// text-align: center;
+		// max-width: 570px;
+	}
 
-	span {
+	.highlight {
 		position: relative;
 	}
-	span:after {
+	.highlight:after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -132,25 +136,42 @@ section {
 		z-index: -10;
 	}
 
+	.fa-magic {
+		font-size: 0.7em;		
+	}
+
 }
 
 
-// Project thumbnails section
+/* Latest Works Section
+--------------------------------------------------------- */
+// Masonry Layout
 .grid {
 	padding-bottom: 2em;
+}
+
+.gutter-sizer {
+	width: 1%;
 }
 
 .grid-sizer,
 .grid-item {
 	width: 100%;
+	@media (min-width: $breakpointTablet){
+		width: calc(50% - 0.5%);
+	}
 }
 
 .grid-item {
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 0.4em;
+	margin-bottom: 0.5em;
 	background: $tertiaryColor-dark;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	@media (min-width: $breakpointTablet){
+		margin-bottom: 1%;
+	}
 
 	img {	
 		display: block;
@@ -185,15 +206,84 @@ section {
 	}
 }
 
-// .white-bg {
-// 	box-shadow: 0 0 40px 5px rgba(100,100,100,0.3);
-// }
+// View All Projects Button
+.view-all {
+	border: 2px solid $secondaryColor;
+	padding: 0.5em;
+	color: $mainColor;
+	font: {
+		family: $navFont;
+		weight: 500;
+	}
+	&:hover,
+	&:focus {
+		background-color: $secondaryColor-light;
+	}
+	
+}
+
+// Scroll to Top Button
+.scroll-to-top {
+	position: fixed;
+	bottom: 9%;
+	right: 6%;
+	z-index: 999;
+	font-size: 3em;
+	display: none;
+	// color: $mainColor-light;
+	// i {
+	// 	text-shadow: 0px 3px 0px rgba(146, 255, 229, 1),
+	// 					 0px 2px 0px rgba(146, 255, 229, 1),
+	// 					 0px 2px 0px rgba(146, 255, 229, 1);
+	// }
+
+}
 
 
-// Footer
+/* Contact Section
+--------------------------------------------------------- */
+.contact {
+	margin: 4em 1.2em 0;
+	padding-top: 1.5em;
+	padding-bottom: 4em;
+	border-top: 2px solid $mainColor-light;
+	text-align: center;
+	@media (min-width: $breakpointTablet){
+		margin: 4em 4% 0;
+	}
+
+	.email {
+		padding: 0 0 2em;
+		margin: 0 auto;
+		font-weight: 300;
+		a {
+			letter-spacing: 2px;
+		}
+	}
+
+	.social a{
+		margin-right: 8px;
+	}
+
+}
+
+.no-break {
+	white-space:nowrap;
+}
+
+
+/* Footer
+--------------------------------------------------------- */
 footer {
-	padding-top: 4em;
-	padding-bottom: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: $tertiaryColor-dark;
+	color: white;
+	font-size: 12px;
+	p {
+		margin: 0;
+		text-align: center;
+	}	
 }
 
 

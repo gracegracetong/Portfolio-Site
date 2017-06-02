@@ -3,9 +3,10 @@
 // HTML elements
 const $body = $('body');
 const $btnMenu = $('.btnMenu');
+const $grid = $('.grid');
 
 
-// Show mobile nav
+// Show mobile dropdown nav
 $body.removeClass('show-mobile-nav');
 
 $btnMenu.click(function(){	
@@ -33,14 +34,15 @@ $('a[href^="#"]').on('click',function (e) {
 	}, 900, 'swing', function () {
 	  window.location.hash = 1+ target;
 	});
-	});
+});
 
 
 // Init Masonry
-$('.grid').masonry({
+$grid.masonry({
 	// options
 	itemSelector: '.grid-item',
 	columnWidth: '.grid-sizer',
+	gutter: '.gutter-sizer',
 	percentPosition: true
 });
 
@@ -48,4 +50,26 @@ $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
 	$grid.masonry('layout');
 });
+
+
+
+// Scroll to top button
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {
+        $('#top').fadeIn('fast');
+    } 
+    else {
+        $('#top').fadeOut('fast');
+    }
+});
+
+$('#top').click(function() {           
+    $('body,html').animate({
+        scrollTop : 0                   
+    }, 500);
+});
+
+
+
+
 
