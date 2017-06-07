@@ -3,6 +3,7 @@
 @import "resets";
 @import "variables";
 @import "navigation";
+@import "projectpage";
 
 
 /* Accessibility
@@ -37,29 +38,36 @@
 
 /* General
 --------------------------------------------------------- */
-// ::-webkit-scrollbar {
-//     width: 8px;
-// }
+::-webkit-scrollbar {
+    width: 10px;
+}
  
-// ::-webkit-scrollbar-track {
-//     border-radius: 10px;
-// }
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+}
  
-// ::-webkit-scrollbar-thumb {
-//     background: black; 
-// }
-// ::-webkit-scrollbar-thumb:window-inactive {
-// 	background: black;
-// }
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: black;
+}
 
-::selection,
-::-moz-selection {
+::selection {
     background: $secondaryColor-light;
 }
 
 *:focus {
-	outline: 1px dotted $tertiaryColor-light;
+	outline: 1px dotted $secondaryColor;
 }
+
+// clearfix
+.clear:after { 
+	display: table; 
+	content: ''; 
+	clear: both; 
+}
+
 
 body {
 	max-width: 1920px;
@@ -72,20 +80,29 @@ h1,h2 {
 	}
 	line-height: 1.4;
 	text-align: center;
+	margin: 0 auto;
 }
 
 h1 {
 	font-size: 2.4em;
-	margin-bottom: 0;
+	margin: 1.6rem auto 0;
 }
 
 h2 {
 	font-size: 1.6em;
+	margin: 1rem auto 1rem;
+}
+
+h3 {
+	margin: 0 auto;
 }
 
 p {
+	margin: 1.5em auto 1.5em;
 	font: {
 		family: $bodyFont;
+		weight: 300;
+		size: 15px;
 	}
 }
 
@@ -93,10 +110,7 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 	color:$tertiaryColor-dark;
-}
-
-section {
-	padding-bottom: 1em;
+	font-family: $bodyFont;
 }
 
 .centered {
@@ -111,41 +125,132 @@ section {
 }
 
 
+/* Header Section
+--------------------------------------------------------- */
+header {
+	height: 300px;
+	transition: height 0.3s ease;
+	@media (min-width: 450px){
+		height: 380px;
+    }
+	@media (min-width: 530px){
+		height: 430px;
+	}
+}
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    left: 0;    
+}
+.confetti {
+    position: absolute;
+    width: 180%;
+    height: 600px;
+    left:0;
+    margin-top: 20px;
+    background-position: top center;
+    background-repeat: repeat-x;
+    transition: width 0.3s ease-in-out;
+    @media (min-width: 480px){
+		width: 180%;
+    }
+	@media (min-width: $breakpointMobile){
+		width: 130%;
+	}
+	@media (min-width: 850px){
+		width: 100%;
+	}
+}
+.confetti-blue {
+    background-image: url('../images/confetti-blue-2.svg');
+}
+.confetti-green {
+    background-image: url('../images/confetti-green-2.svg');
+}
+.confetti-purple {
+    background-image: url('../images/confetti-purple-2.svg');
+}
+
+@keyframes floating {
+	0% {
+		transform: translatey(0);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0);
+	}
+}
+
+.balloon {
+	width: 100%;
+	// transition: all 0.5s ease-in-out;
+	transform: translatey(0);
+	animation: floating 3.5s ease-in-out infinite;
+	img {
+		width: 50%;
+		max-width: 280px;
+		display: block;
+		margin: 5em auto 0;
+	}
+
+}
+
+
+
 /* Intro Section
 --------------------------------------------------------- */
 .intro {
 	padding-top: 5em;
-
-	p,h1,h2 {
-		// text-align: center;
-		// max-width: 570px;
+	p {
+		max-width: 1028px;
+		// margin: 0 auto;
 	}
-
-	.highlight {
-		position: relative;
-	}
-	.highlight:after {
-		content: "";
-		display: block;
-		position: absolute;
-		bottom: -4px;
-		left: 6px;
-		height: 18px;
-		width: 90%;
-		background: $secondaryColor-lightest;
-		z-index: -10;
-	}
-
 	.fa-magic {
 		font-size: 0.7em;		
 	}
+}
 
+.highlight {
+	position: relative;
+}
+.highlight:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	left: 6px;
+	height: 18px;
+	width: 90%;
+	background: $secondaryColor-lightest;
+	z-index: -10;
+}
+
+.no-break {
+	white-space:nowrap;
+}
+
+.read-more {
+	font: {
+		weight: 400;
+	}
+	border-bottom: 2px solid $tertiaryColor;
+	&:hover {
+		font-style: italic;
+	}
 }
 
 
 /* Latest Works Section
 --------------------------------------------------------- */
 // Masonry Layout
+.work {
+	margin-top: 3em;
+}
+
 .grid {
 	padding-bottom: 2em;
 }
@@ -173,11 +278,28 @@ section {
 		margin-bottom: 1%;
 	}
 
+	// testing figure
+	// figure {
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	margin: 0;
+	// 	display: block;
+	// 	opacity: 1;
+	// 	transform: scale(1);
+	// 	transition: all 0.5s ease;
+	// 	overflow: hidden;
+	// 	backface-visibility: hidden;
+	// }
+
 	img {	
 		display: block;
 		opacity: 1;
 		transform: scale(1);
 		transition: all 0.5s ease;
+	}
+
+	p {
+		margin: 0.6em auto 0.6em;
 	}
 
 	.text-overlay {
@@ -203,6 +325,10 @@ section {
 		.text-overlay {
 			opacity: 1;
 		}
+
+		a {
+			font-style: normal;
+		}
 	}
 }
 
@@ -210,6 +336,9 @@ section {
 .view-all {
 	border: 2px solid $secondaryColor;
 	padding: 0.5em;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
 	color: $mainColor;
 	font: {
 		family: $navFont;
@@ -219,7 +348,6 @@ section {
 	&:focus {
 		background-color: $secondaryColor-light;
 	}
-	
 }
 
 // Scroll to Top Button
@@ -230,20 +358,13 @@ section {
 	z-index: 999;
 	font-size: 3em;
 	display: none;
-	// color: $mainColor-light;
-	// i {
-	// 	text-shadow: 0px 3px 0px rgba(146, 255, 229, 1),
-	// 					 0px 2px 0px rgba(146, 255, 229, 1),
-	// 					 0px 2px 0px rgba(146, 255, 229, 1);
-	// }
-
 }
 
 
 /* Contact Section
 --------------------------------------------------------- */
 .contact {
-	margin: 4em 1.2em 0;
+	margin: 6em 1.2em 0;
 	padding-top: 1.5em;
 	padding-bottom: 4em;
 	border-top: 2px solid $mainColor-light;
@@ -257,7 +378,11 @@ section {
 		margin: 0 auto;
 		font-weight: 300;
 		a {
-			letter-spacing: 2px;
+			letter-spacing: 1px;
+			&:hover {
+				border-bottom: 2px solid $tertiaryColor;
+				font-style: italic;
+			}
 		}
 	}
 
@@ -265,10 +390,6 @@ section {
 		margin-right: 8px;
 	}
 
-}
-
-.no-break {
-	white-space:nowrap;
 }
 
 
@@ -279,11 +400,15 @@ footer {
 	padding-bottom: 0.5em;
 	background-color: $tertiaryColor-dark;
 	color: white;
-	font-size: 12px;
 	p {
 		margin: 0;
 		text-align: center;
+		font-size: 0.8em;
 	}	
+
+	.fa-heart {
+		font-size: 0.8em;
+	}
 }
 
 

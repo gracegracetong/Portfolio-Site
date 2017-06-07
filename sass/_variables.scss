@@ -11,17 +11,14 @@ $secondaryColor-dark: darken($secondaryColor, 20);
 
 $tertiaryColor: #7B68EE;
 $tertiaryColor-light: lighten($tertiaryColor, 5);
+// $tertiaryColor-lightest: lighten($tertiaryColor, 20);
 $tertiaryColor-dark: darken($tertiaryColor, 10);
-
-
-// gradient
-// $gradient: linear-gradient(to right, #ffafbd, #ffc3a0);
-
 
 // Typography
 $navFont: Work Sans, sans-serif;
 $headFont: Work Sans, sans-serif;
 $bodyFont: Work Sans, sans-serif;
+$bodyFont: Roboto Mono, sans-serif;
 
 
 // Breakpoints
