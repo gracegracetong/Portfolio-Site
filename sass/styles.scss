@@ -35,30 +35,37 @@
 	z-index: 100000; 
 }
 
+// Show focus outline when tabbing, not on click
+body:not(.show-focus-outlines) button:focus, 
+body:not(.show-focus-outlines) a:focus, 
+body:not(.show-focus-outlines) [tabindex]:focus {
+  outline: none;
+}
+
 
 /* General
 --------------------------------------------------------- */
-::-webkit-scrollbar {
-    width: 10px;
-}
+// ::-webkit-scrollbar {
+//     width: 10px;
+// }
  
-::-webkit-scrollbar-track {
-    border: 1px solid black;
-}
+// ::-webkit-scrollbar-track {
+//     border: 1px solid black;
+// }
  
-::-webkit-scrollbar-thumb {
-    background: black; 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: black;
-}
+// ::-webkit-scrollbar-thumb {
+//     background: black; 
+// }
+// ::-webkit-scrollbar-thumb:window-inactive {
+// 	background: black;
+// }
 
 ::selection {
     background: $secondaryColor-light;
 }
 
 *:focus {
-	outline: 1px dotted $secondaryColor;
+	outline: 0.1em dotted $tertiaryColor;
 }
 
 // clearfix
@@ -70,7 +77,9 @@
 
 
 body {
-	max-width: 1920px;
+	// max-width: 1920px;
+	// margin: 0 auto;
+	overflow-x: hidden;
 }
 
 h1,h2 {
@@ -113,6 +122,14 @@ a {
 	font-family: $bodyFont;
 }
 
+main {
+	max-width: 1920px;
+	margin: 0 auto;
+	h1,h2,h3,p {
+		max-width: 1000px;
+	}
+}
+
 .centered {
 	margin: 0 auto;
 	padding-left: 1em;
@@ -128,6 +145,8 @@ a {
 /* Header Section
 --------------------------------------------------------- */
 header {
+	max-width: 1920px;
+	margin: 0 auto;
 	height: 300px;
 	transition: height 0.3s ease;
 	@media (min-width: 450px){
@@ -140,16 +159,16 @@ header {
 .parallax {
     position: absolute;
     width: 100%;
+    left: 0;
     height: 600px;
-    overflow: hidden;
-    left: 0;    
+    overflow: hidden;   
 }
 .confetti {
     position: absolute;
     width: 180%;
     height: 600px;
     left:0;
-    margin-top: 20px;
+    // margin-top: 20px;
     background-position: top center;
     background-repeat: repeat-x;
     transition: width 0.3s ease-in-out;
@@ -164,13 +183,13 @@ header {
 	}
 }
 .confetti-blue {
-    background-image: url('../images/confetti-blue-2.svg');
+    background-image: url('../images/confetti-blue.svg');
 }
 .confetti-green {
-    background-image: url('../images/confetti-green-2.svg');
+    background-image: url('../images/confetti-green.svg');
 }
 .confetti-purple {
-    background-image: url('../images/confetti-purple-2.svg');
+    background-image: url('../images/confetti-purple.svg');
 }
 
 @keyframes floating {
@@ -278,19 +297,6 @@ header {
 		margin-bottom: 1%;
 	}
 
-	// testing figure
-	// figure {
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	margin: 0;
-	// 	display: block;
-	// 	opacity: 1;
-	// 	transform: scale(1);
-	// 	transition: all 0.5s ease;
-	// 	overflow: hidden;
-	// 	backface-visibility: hidden;
-	// }
-
 	img {	
 		display: block;
 		opacity: 1;
@@ -332,45 +338,44 @@ header {
 	}
 }
 
-// View All Projects Button
-.view-all {
-	border: 2px solid $secondaryColor;
-	padding: 0.5em;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	color: $mainColor;
-	font: {
-		family: $navFont;
-		weight: 500;
-	}
-	&:hover,
-	&:focus {
-		background-color: $secondaryColor-light;
-	}
-}
 
 // Scroll to Top Button
 .scroll-to-top {
 	position: fixed;
-	bottom: 9%;
-	right: 6%;
+	bottom: 6%;
+	right: 5%;
 	z-index: 999;
-	font-size: 3em;
-	display: none;
+	svg {
+		width: 4em;
+		circle{
+			transition: fill 200ms ease-in-out;
+			fill: rgba(255,255,255,0.4);
+			stroke: none;
+		}
+		&:hover{
+			circle{
+				fill: rgba(0,0,0,0.8);
+				fill: rgba($secondaryColor,0.7);
+			}
+			polyline,line {
+				// stroke: $secondaryColor;
+				// fill: rgba(255,255,255,0.6);
+			}
+		}
+	} //end svg
 }
 
 
 /* Contact Section
 --------------------------------------------------------- */
 .contact {
-	margin: 6em 1.2em 0;
+	margin: 2em 1.2em 0;
 	padding-top: 1.5em;
 	padding-bottom: 4em;
 	border-top: 2px solid $mainColor-light;
 	text-align: center;
 	@media (min-width: $breakpointTablet){
-		margin: 4em 4% 0;
+		margin: 3em 4% 0;
 	}
 
 	.email {

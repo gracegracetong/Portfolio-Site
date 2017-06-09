@@ -20,7 +20,7 @@ $body.removeClass('show-mobile-nav');
 $btnMenu.click(function(){	
 	$body.toggleClass('show-mobile-nav');
 	$btnMenu.toggleClass('animate');
-	$navWrapper.toggleClass('opaque');
+	// $navWrapper.toggleClass('opaque');
 });
 
 // Auto close dropdown nav when window is resized larger
@@ -33,7 +33,7 @@ function myWinWidth() {
     if(winWidth >= 600){
              $body.removeClass('show-mobile-nav');  
              $btnMenu.removeClass('animate');
-             $navWrapper.removeClass('opaque');        
+             // $navWrapper.removeClass('opaque');        
     }
 	return false;
 };
@@ -43,22 +43,22 @@ $('#mainNav a').click(function() {
 	if($body.hasClass('show-mobile-nav')){
 		$body.removeClass('show-mobile-nav');
 		$btnMenu.removeClass('animate');
-		$navWrapper.removeClass('opaque'); 
+		// $navWrapper.removeClass('opaque'); 
 	};
 });
 
 // Change nav opacity on scroll
-$(window).scroll(function() {
-    let scrollPos = $(window).scrollTop();
+// $(window).scroll(function() {
+//     let scrollPos = $(window).scrollTop();
 
-    if(scrollPos >= 350) {
-      $navWrapper.addClass('opaque');
-    } 
+//     if(scrollPos >= 350) {
+//       $navWrapper.addClass('opaque');
+//     } 
 
-    if(scrollPos < 350 && !$body.hasClass('show-mobile-nav')) {
-    	$navWrapper.removeClass('opaque');
-    }
-});
+//     if(scrollPos < 350 && !$body.hasClass('show-mobile-nav')) {
+//     	$navWrapper.removeClass('opaque');
+//     }
+// });
 
 
 /* Smooth Scroll
@@ -141,6 +141,15 @@ $('#top').click(function() {
 
 
 
+// Show focus outline when tabbing, but not on click
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode === 9) {
+    $('body').addClass('show-focus-outlines');
+  }
+});
 
+document.addEventListener('click', function(e) {
+  $('body').removeClass('show-focus-outlines');
+});
 
 

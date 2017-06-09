@@ -4,12 +4,12 @@
 $mainColor: #000;
 $mainColor-light: lighten($mainColor, 20);
 
-$secondaryColor: #92ffe5;
+$secondaryColor: rgb(146, 255, 229);
 $secondaryColor-light: lighten($secondaryColor, 6);
 $secondaryColor-lightest: lighten($secondaryColor, 10);
 $secondaryColor-dark: darken($secondaryColor, 20);
 
-$tertiaryColor: #7B68EE;
+$tertiaryColor: rgb(123, 104, 238);
 $tertiaryColor-light: lighten($tertiaryColor, 5);
 // $tertiaryColor-lightest: lighten($tertiaryColor, 20);
 $tertiaryColor-dark: darken($tertiaryColor, 10);
