@@ -128,6 +128,10 @@ main {
 	h1,h2,h3,p {
 		max-width: 1000px;
 	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .centered {
@@ -265,78 +269,7 @@ header {
 
 /* Latest Works Section
 --------------------------------------------------------- */
-// Masonry Layout
-.work {
-	margin-top: 3em;
-}
-
-.grid {
-	padding-bottom: 2em;
-}
-
-.gutter-sizer {
-	width: 1%;
-}
-
-.grid-sizer,
-.grid-item {
-	width: 100%;
-	@media (min-width: $breakpointTablet){
-		width: calc(50% - 0.5%);
-	}
-}
-
-.grid-item {
-	overflow: hidden;
-	position: relative;
-	margin-bottom: 0.5em;
-	background: $tertiaryColor-dark;
-	backface-visibility: hidden;
-
-	@media (min-width: $breakpointTablet){
-		margin-bottom: 1%;
-	}
-
-	img {	
-		display: block;
-		opacity: 1;
-		transform: scale(1);
-		transition: all 0.5s ease;
-	}
-
-	p {
-		margin: 0.6em auto 0.6em;
-	}
-
-	.text-overlay {
-		z-index: 500;
-		width: 80%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		color: white;
-		text-align: center;
-		transition: all 0.5s ease;
-		opacity: 0;
-	}
-
-	&:hover,
-	&:focus {
-		img {
-			transform: scale(1.1);
-			opacity: 0.2;
-		}
-
-		.text-overlay {
-			opacity: 1;
-		}
-
-		a {
-			font-style: normal;
-		}
-	}
-}
+@import "worksection";
 
 
 // Scroll to Top Button
@@ -372,7 +305,7 @@ header {
 	margin: 2em 1.2em 0;
 	padding-top: 1.5em;
 	padding-bottom: 4em;
-	border-top: 2px solid $mainColor-light;
+	border-top: 1px solid $mainColor-light;
 	text-align: center;
 	@media (min-width: $breakpointTablet){
 		margin: 3em 4% 0;
@@ -411,9 +344,9 @@ footer {
 		font-size: 0.8em;
 	}	
 
-	.fa-heart {
-		font-size: 0.8em;
-	}
+	// .fa-heart {
+	// 	font-size: 0.8em;
+	// }
 }
 
 

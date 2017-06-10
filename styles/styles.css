@@ -193,8 +193,8 @@ nav ul a {
   font-size: 1em; }
 
 .nav-wrapper {
-  padding-top: 1em;
-  padding-bottom: 0.2em;
+  padding-top: 0.6em;
+  padding-bottom: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -352,20 +352,37 @@ nav ul a {
   height: auto; }
 
 .project-header-img {
-  margin-top: 56px;
+  margin-top: 46px;
   position: relative; }
 
 .project-header-img h1 {
   position: absolute;
-  top: 36%;
+  top: 50%;
+  transform: translatey(-70%);
   left: 0;
   right: 0;
   margin: 0 auto;
+  padding: 0 1em;
   font-size: 1.8em; }
 
-@media (min-width: 600px) {
+@media (min-width: 540px) {
   .project-header-img h1 {
     font-size: 3em; } }
+
+.project-header-img .title-underline:after {
+  content: "";
+  width: 5em;
+  height: 12px;
+  margin: 0 auto;
+  border-bottom: 4px solid black;
+  display: block; }
+
+.dark-header h1 {
+  color: white;
+  font-weight: 400; }
+
+.dark-header .title-underline:after {
+  border-bottom: 4px solid white; }
 
 .project-overview h2 {
   font-size: 1.3em; }
@@ -375,7 +392,8 @@ nav ul a {
   font-weight: 400;
   color: #533ae9;
   text-align: center;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  line-height: 1.5; }
 
 .view-live {
   border: 2px solid black;
@@ -394,6 +412,9 @@ nav ul a {
 
 .view-live:hover, .view-live:focus {
   background-color: #c5fff1; }
+
+.view-more {
+  margin-top: 2.5em; }
 
 .project-styles {
   margin-top: 8em; }
@@ -415,15 +436,22 @@ nav ul a {
   margin: 0;
   text-align: center; }
 
+.project-styles .style-tile {
+  max-width: 1300px;
+  margin: 0 auto; }
+
 .project-layouts {
-  margin-top: 1.5em;
-  padding: 1em 0 4em; }
+  margin-top: 1.5em; }
 
 .project-layouts .screenshot-container {
   margin: 0 1.2em; }
 
 .white-bg-shadow {
   box-shadow: 10px 10px 28px -9px rgba(0, 0, 0, 0.15), -10px -10px 28px -9px rgba(0, 0, 0, 0.15); }
+
+.contact-project {
+  margin-top: 5em !important;
+  border-top: 0 !important; }
 
 /* Mason Architects Project Page Styles
 --------------------------------------------------------- */
@@ -442,9 +470,55 @@ nav ul a {
   margin: 0 auto; }
 
 .main-mason .project-layouts {
-  margin-top: 1.5em;
   background: #c9d7e4;
   padding: 1em 0 5em; }
+
+/* Javascript Plant Tutorials Project Page Styles
+--------------------------------------------------------- */
+.main-plant-tuts .main-color {
+  background: #5b72d7; }
+
+.main-plant-tuts .secondary-color {
+  background: #4FC6B7; }
+
+.main-plant-tuts .tertiary-color {
+  background: #A7ACD9; }
+
+.main-plant-tuts .tertiary-color-2 {
+  background: #E3B9BC; }
+
+.main-plant-tuts .project-layouts {
+  background: #708aed; }
+
+.main-plant-tuts .project-layouts h2 {
+  margin: 1rem auto 0;
+  padding-top: 1em; }
+
+/* Machu Picchu Project Page Styles
+--------------------------------------------------------- */
+.main-mp .project-layouts {
+  background: #dcdcdc;
+  padding: 1em 0 5em; }
+
+.main-mp .project-layouts h2 {
+  padding-top: 0em;
+  margin-bottom: 1em; }
+
+.main-mp .view-more {
+  margin-top: 7em; }
+
+.main-mp .main-color {
+  background: #494949; }
+
+.main-mp .secondary-color {
+  background: white;
+  border: 2px solid #494949; }
+
+.main-mp .tertiary-color {
+  background: #2a3d17; }
+
+.main-mp .tertiary-color-2 {
+  background: #000; }
 
 /* Accessibility
 --------------------------------------------------------- */
@@ -530,6 +604,10 @@ main {
 
 main h1, main h2, main h3, main p {
   max-width: 1000px; }
+
+main img {
+  display: block;
+  margin: 0 auto; }
 
 .centered {
   margin: 0 auto;
@@ -671,9 +749,7 @@ header {
 .grid-item {
   overflow: hidden;
   position: relative;
-  margin-bottom: 0.5em;
-  background: #533ae9;
-  backface-visibility: hidden; }
+  margin-bottom: 0.5em; }
 
 @media (min-width: 768px) {
   .grid-item {
@@ -699,6 +775,10 @@ header {
   text-align: center;
   transition: all 0.5s ease;
   opacity: 0; }
+
+.grid-item .thumbnail-overlay {
+  background: #533ae9;
+  backface-visibility: hidden; }
 
 .grid-item:hover img, .grid-item:focus img {
   transform: scale(1.1);
@@ -734,7 +814,7 @@ header {
   margin: 2em 1.2em 0;
   padding-top: 1.5em;
   padding-bottom: 4em;
-  border-top: 2px solid #333333;
+  border-top: 1px solid #333333;
   text-align: center; }
 
 @media (min-width: 768px) {
@@ -767,7 +847,4 @@ footer {
 footer p {
   margin: 0;
   text-align: center;
-  font-size: 0.8em; }
-
-footer .fa-heart {
   font-size: 0.8em; }

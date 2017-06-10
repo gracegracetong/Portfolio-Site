@@ -6,11 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grace Tong</title>
 	<link rel="stylesheet" href="styles/styles.css" type="text/css" media="all">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800|Roboto+Mono:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500|Roboto+Mono:300,500" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico"/>
-
-	<!-- DELETE UNUSED FONT WEIGHTS -->
-
 </head>
 
 <body>
@@ -39,54 +36,59 @@
 			</nav>
 		</div>
 
-		<div class="project-header-img">
-		<h1>Mason Architects</h1>
-			<picture class="header-img">			
-				<source media="(min-width: 920px)" 
-						srcset="images/project-mason/white-minimalist-concrete-architecture.jpg">
-				<img src="images/project-mason/white-minimalist-concrete-architecture-crop.jpg" alt="Image of White Industrial Building Design">
+		<div class="project-header-img dark-header">
+			<h1 class="title-underline">Javascript Plant Tutorials</h1>
+			<picture class="header-img">
+				<source media="(min-width: 1020px)" 
+						srcset="images/project-plant-tutorials/javascript-tutorial-header-wide.png">
+				<source media="(min-width: 650px)" 
+						srcset="images/project-plant-tutorials/javascript-tutorial-header.png">
+				<img src="images/project-plant-tutorials/javascript-tutorial-header-crop.png" alt="Header Image of Javascript Tutorials Project Page">
 			</picture>
 		</div>
 	</header>
 
-	<main id="content" role="main" class="main-mason">
+	<main id="content" role="main" class="main-plant-tuts">
 
 		<section class="project-overview centered" id="overview">
-			<!-- <h1>Mason Architects</h1> -->
 			<h2>
-				A responsive, one-page scrolling website for Mason Architects, a fictious <span class="no-break">architecture studio.</span> 
+				A series of experimentive Javascript tutorials revolving around the theme of growing <span class="no-break">a plant.</span> 
 			</h2>
 			<h3 class="tools">
-				HTML | CSS | JQUERY | PHOTOSHOP
+				JAVASCRIPT | JQUERY | HTML | CSS | ILLUSTRATOR
 			</h3>
-			<p>To reflect the studio's clean and modern architectural style, the website design is layed out in a way that emphasizes whitespace and minimalist elements. The color palette was selected to give a simple and calm ambience to the site, which is further reflected in the imagery used.</p>
+			<p>This project consists of three different javascript tutorials with the aim of teaching beginner's Javascript and jQuery in a more enjoyable and visually interesting way. The tutorials are centered around the theme of growing plants, and code is provided below each example.</p>
 
-			<a href="http://gtong.htpwebdesign.ca/mason-architects" class="view-live">view live</a>
+			<a href="http://gtong.htpwebdesign.ca/js-tutorials/" class="view-live">view live</a>
 		</section>
 
 		<section class="project-styles">
 			<h2>Color Palette</h2>
-			<div class="color-palette">
-				<div class="tertiary-color color"><p>#B6C6D6</p></div>
-				<div class="main-color color"><p>#000000</p></div>
-				<div class="secondary-color color"><p>#FFFFF</p></div>		
+			<div class="color-palette">				
+				<div class="secondary-color color"><p>#4FC6B7</p></div>	
+				<div class="main-color color"><p>#5b72d7</p></div>
+				<div class="tertiary-color color"><p>#A7ACD9</p></div>	
+				<div class="tertiary-color-2 color"><p>#E3B9BC</p></div>	
 			</div>
 
-			<h2>Style Tile</h2>
-			<img src="images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
+			<!-- <h2>Style Tile</h2>
+			<div class="style-tile">
+				<img src="images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
+			</div>	 -->			
 		</section>		
 
 		<section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<img class="white-bg-shadow" src="images/project-mason/full-screenshot-mason-architects.png" alt="Fullpage screenshot of Mason Architects website design">
+				<img src="images/project-plant-tutorials/javascript-plants-mockup-browser-long.png" alt="Screenshots of the Plant Tutorial Site">
 			</div>
 			
+			<a href="index.html#work" class="view-live view-more">view more projects</a>
 		</section>
 		
 
 		<!-- Contact Section -->
-		<section class="contact" id="contact">
+		<section class="contact contact-project" id="contact">
 			<h2>Get in Touch</h2>
 			<p>Interested in a collaboration <span class="no-break">or just want to say hi?</span><br>I'd love to hear from you!</p>			
 			<div class="email">

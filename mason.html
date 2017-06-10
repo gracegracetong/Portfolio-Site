@@ -6,11 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grace Tong</title>
 	<link rel="stylesheet" href="styles/styles.css" type="text/css" media="all">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800|Roboto+Mono:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500|Roboto+Mono:300,500" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico"/>
-
-	<!-- DELETE UNUSED FONT WEIGHTS -->
-
 </head>
 
 <body>
@@ -40,10 +37,12 @@
 		</div>
 
 		<div class="project-header-img">
-		<h1>Mason Architects</h1>
-			<picture class="header-img">			
-				<source media="(min-width: 920px)" 
-						srcset="images/project-mason/white-minimalist-concrete-architecture.jpg">
+		<h1 class="title-underline">Mason Architects</h1>
+			<picture class="header-img">
+				<source media="(min-width: 1020px)" 
+						srcset="images/project-mason/white-minimalist-concrete-architecture-wide.jpg">
+				<source media="(min-width: 650px)" 
+						srcset="images/project-mason/white-minimalist-concrete-architecture.jpg">	
 				<img src="images/project-mason/white-minimalist-concrete-architecture-crop.jpg" alt="Image of White Industrial Building Design">
 			</picture>
 		</div>
@@ -52,7 +51,6 @@
 	<main id="content" role="main" class="main-mason">
 
 		<section class="project-overview centered" id="overview">
-			<!-- <h1>Mason Architects</h1> -->
 			<h2>
 				A responsive, one-page scrolling website for Mason Architects, a fictious <span class="no-break">architecture studio.</span> 
 			</h2>
@@ -73,7 +71,9 @@
 			</div>
 
 			<h2>Style Tile</h2>
-			<img src="images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
+			<div class="style-tile">
+				<img src="images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
+			</div>	
 		</section>		
 
 		<section class="project-layouts">
@@ -81,12 +81,19 @@
 			<div class="screenshot-container">
 				<img class="white-bg-shadow" src="images/project-mason/full-screenshot-mason-architects.png" alt="Fullpage screenshot of Mason Architects website design">
 			</div>
-			
+		</section>
+
+		<section class="responsive-layouts">
+			<h2>Mobile & Tablet</h2>
+			<img src="images/project-mason/tablet-iphone-mockup.png" alt="Tablet and Mobile View of the Website Design">
+			<img src="images/project-mason/responsive-mockups.png" alt="Image of responsive website on multiple screen sizes">
+
+			<a href="index.html#work" class="view-live view-more">view more projects</a>
 		</section>
 		
 
 		<!-- Contact Section -->
-		<section class="contact" id="contact">
+		<section class="contact contact-project" id="contact">
 			<h2>Get in Touch</h2>
 			<p>Interested in a collaboration <span class="no-break">or just want to say hi?</span><br>I'd love to hear from you!</p>			
 			<div class="email">
