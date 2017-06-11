@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('sass', function(){
@@ -15,6 +16,7 @@ gulp.task('sass', function(){
 
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
     .pipe(gulp.dest('styles'))
+    .pipe(autoprefixer())
     .pipe(browserSync.reload({
       stream: true
     }))

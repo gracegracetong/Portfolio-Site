@@ -45,21 +45,6 @@ body:not(.show-focus-outlines) [tabindex]:focus {
 
 /* General
 --------------------------------------------------------- */
-// ::-webkit-scrollbar {
-//     width: 10px;
-// }
- 
-// ::-webkit-scrollbar-track {
-//     border: 1px solid black;
-// }
- 
-// ::-webkit-scrollbar-thumb {
-//     background: black; 
-// }
-// ::-webkit-scrollbar-thumb:window-inactive {
-// 	background: black;
-// }
-
 ::selection {
     background: $secondaryColor-light;
 }
@@ -128,6 +113,9 @@ main {
 	h1,h2,h3,p {
 		max-width: 1000px;
 	}
+	p{
+		line-height: 1.6;
+	}
 	img {
 		display: block;
 		margin: 0 auto;
@@ -172,7 +160,6 @@ header {
     width: 180%;
     height: 600px;
     left:0;
-    // margin-top: 20px;
     background-position: top center;
     background-repeat: repeat-x;
     transition: width 0.3s ease-in-out;
@@ -210,7 +197,6 @@ header {
 
 .balloon {
 	width: 100%;
-	// transition: all 0.5s ease-in-out;
 	transform: translatey(0);
 	animation: floating 3.5s ease-in-out infinite;
 	img {
@@ -229,11 +215,15 @@ header {
 .intro {
 	padding-top: 5em;
 	p {
-		max-width: 1028px;
-		// margin: 0 auto;
+		max-width: 1000px;
 	}
 	.fa-magic {
 		font-size: 0.7em;		
+	}
+	@media (min-width: $breakpointTablet){
+		h1{
+			font-size: 3.5em;
+		}
 	}
 }
 
@@ -267,6 +257,40 @@ header {
 }
 
 
+/* About Me Section
+--------------------------------------------------------- */
+.about-header {
+	// height: 300px;
+	// background: $tertiaryColor-dark;
+	margin-bottom: 3em;
+	.title-underline:after {
+		width: 3em;
+	}
+}
+
+.about-me {
+	p {
+		max-width: 800px;
+		line-height: 1.6;
+	}
+}
+
+.underline {
+	position: relative;
+}
+.underline:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	height: 6px;
+	width: 100%;
+	background: $secondaryColor-lightest;
+	z-index: -10;
+}
+
+
 /* Latest Works Section
 --------------------------------------------------------- */
 @import "worksection";
@@ -290,21 +314,17 @@ header {
 				fill: rgba(0,0,0,0.8);
 				fill: rgba($secondaryColor,0.7);
 			}
-			polyline,line {
-				// stroke: $secondaryColor;
-				// fill: rgba(255,255,255,0.6);
-			}
 		}
 	} //end svg
 }
 
 
-/* Contact Section
+/* Footer & Contact Section
 --------------------------------------------------------- */
 .contact {
 	margin: 2em 1.2em 0;
 	padding-top: 1.5em;
-	padding-bottom: 4em;
+	padding-bottom: 1.5em;
 	border-top: 1px solid $mainColor-light;
 	text-align: center;
 	@media (min-width: $breakpointTablet){
@@ -323,31 +343,15 @@ header {
 			}
 		}
 	}
-
 	.social a{
 		margin-right: 8px;
+	}
+	.copyright{
+		color: lightgrey;
 	}
 
 }
 
-
-/* Footer
---------------------------------------------------------- */
-footer {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	background-color: $tertiaryColor-dark;
-	color: white;
-	p {
-		margin: 0;
-		text-align: center;
-		font-size: 0.8em;
-	}	
-
-	// .fa-heart {
-	// 	font-size: 0.8em;
-	// }
-}
 
 
 

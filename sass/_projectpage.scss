@@ -128,8 +128,8 @@
 }
 
 .contact-project{
-	margin-top: 5em !important;
-	border-top: 0 !important;
+	margin-top: 8em !important;
+	// border-top: 0 !important;
 }
 
 
@@ -191,14 +191,17 @@
 .main-mp {
 	.project-layouts{
 		background: #dcdcdc;;
-		padding: 1em 0 5em;
+		padding: 1em 0 3em;
 		h2{
 			padding-top: 0em;
 			margin-bottom: 1em;
 		}
 	}
+	.screenshot-container{
+		margin-bottom: 2em;
+	}
 	.view-more{
-		margin-top: 7em;
+		margin-top: 5.5em;
 	}
 
 	.main-color{
