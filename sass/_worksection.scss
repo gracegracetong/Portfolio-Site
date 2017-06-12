@@ -1,6 +1,11 @@
 // Masonry Layout
 .work {
 	margin-top: 3em;
+	@media (min-width: $breakpointTablet){
+		h2{
+			font-size: 2.2em;
+		}
+	}
 }
 
 .grid {

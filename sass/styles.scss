@@ -74,7 +74,6 @@ h1,h2 {
 	}
 	line-height: 1.4;
 	text-align: center;
-	margin: 0 auto;
 }
 
 h1 {
@@ -220,6 +219,10 @@ header {
 	.fa-magic {
 		font-size: 0.7em;		
 	}
+	.fa-magic,
+	.fa-code {
+		padding-left: 3px; 
+	}
 	@media (min-width: $breakpointTablet){
 		h1{
 			font-size: 3.5em;
@@ -244,6 +247,7 @@ header {
 
 .no-break {
 	white-space:nowrap;
+	display: inline;
 }
 
 .read-more {
