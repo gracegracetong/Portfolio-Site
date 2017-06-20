@@ -529,6 +529,25 @@ nav ul a {
 .main-mp .tertiary-color-2 {
   background: #000; }
 
+/* Yaletown Dog Training Project Page Styles
+--------------------------------------------------------- */
+.main-yaletown .main-color {
+  background: #404040; }
+
+.main-yaletown .secondary-color {
+  background: #BDCAE5; }
+
+.main-yaletown .tertiary-color {
+  background: #dfe3e3; }
+
+.main-yaletown img {
+  display: block;
+  margin: 0 auto; }
+
+.main-yaletown .project-layouts {
+  background: #F5F5F5;
+  padding: 1em 0 5em; }
+
 /* Accessibility
 --------------------------------------------------------- */
 .screen-reader-text {
@@ -743,7 +762,7 @@ header {
   font-weight: 400;
   border-bottom: 2px solid mediumslateblue; }
 
-.read-more:hover {
+.read-more:hover, .read-more:focus {
   font-style: italic; }
 
 /* About Me Section
@@ -879,7 +898,7 @@ header {
 .contact .email a {
   letter-spacing: 1px; }
 
-.contact .email a:hover {
+.contact .email a:hover, .contact .email a:focus {
   border-bottom: 2px solid mediumslateblue;
   font-style: italic; }
 

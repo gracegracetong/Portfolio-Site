@@ -255,7 +255,8 @@ header {
 		weight: 400;
 	}
 	border-bottom: 2px solid $tertiaryColor;
-	&:hover {
+	&:hover,
+	&:focus {
 		font-style: italic;
 	}
 }
@@ -341,7 +342,8 @@ header {
 		font-weight: 300;
 		a {
 			letter-spacing: 1px;
-			&:hover {
+			&:hover,
+			&:focus {
 				border-bottom: 2px solid $tertiaryColor;
 				font-style: italic;
 			}
@@ -353,7 +355,6 @@ header {
 	.copyright{
 		color: lightgrey;
 	}
-
 }
 
 

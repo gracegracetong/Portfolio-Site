@@ -27,10 +27,9 @@ gulp.task('sass', function(){
 // browsersync
 gulp.task('browserSync', function() {
   browserSync.init({
-    // server: {
-    //   baseDir: './'
-    // },
-    proxy: "http://localhost:8080/portfolio/"
+    server: {
+      baseDir: './'
+    },
   })
 })
 
@@ -38,7 +37,6 @@ gulp.task('browserSync', function() {
 gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('sass/**/*.scss', ['sass']); 
   gulp.watch('*.html', browserSync.reload); 
-  gulp.watch('./**/*.php', browserSync.reload); 
   gulp.watch('js/**/*.js', browserSync.reload); 
 })
 
