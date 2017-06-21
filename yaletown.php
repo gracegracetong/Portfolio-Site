@@ -1,6 +1,6 @@
 <?php include('templates/header.php');  ?>
 
-<body>
+<body class="project-page">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	
 	<header class="project-header dark-header">

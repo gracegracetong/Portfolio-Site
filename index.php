@@ -102,7 +102,7 @@
 				</div>
 
 				<!-- <div class="grid-item">
-					<a href="#">
+					<a href="portfolio-project.php">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Personal Portfolio</h3>

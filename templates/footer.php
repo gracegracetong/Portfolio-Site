@@ -5,7 +5,7 @@
 
 </main>
 
-	<footer class="contact contact-project centered" id="contact">
+	<footer class="contact centered" id="contact">
 		<h2>Get in Touch</h2>
 		<p>Interested in a collaboration <span class="no-break">or just want to say hi?</span><br>I'd love to hear from you!</p>			
 

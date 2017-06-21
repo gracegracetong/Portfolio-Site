@@ -188,7 +188,7 @@ nav ul {
   padding-left: 0; }
 
 nav ul a {
-  color: #000;
+  color: #292929;
   font-family: Work Sans, sans-serif;
   font-size: 1em; }
 
@@ -381,7 +381,7 @@ nav ul a {
   width: 5em;
   height: 12px;
   margin: 0 auto;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #292929;
   display: block; }
 
 .dark-header h1 {
@@ -403,7 +403,7 @@ nav ul a {
   line-height: 1.5; }
 
 .view-live {
-  border: 2px solid black;
+  border: 2px solid #292929;
   width: 50%;
   max-width: 360px;
   padding: 0.5em;
@@ -412,7 +412,7 @@ nav ul a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  color: #000;
+  color: #292929;
   transition: background-color 500ms ease;
   font-family: Work Sans, sans-serif;
   font-weight: 500; }
@@ -456,8 +456,8 @@ nav ul a {
 .white-bg-shadow {
   box-shadow: 10px 10px 28px -9px rgba(0, 0, 0, 0.15), -10px -10px 28px -9px rgba(0, 0, 0, 0.15); }
 
-.contact-project {
-  margin-top: 8em !important; }
+.project-page footer {
+  margin-top: 10em !important; }
 
 /* Mason Architects Project Page Styles
 --------------------------------------------------------- */
@@ -548,6 +548,28 @@ nav ul a {
   background: #F5F5F5;
   padding: 1em 0 5em; }
 
+/* Portfolio Project Page Styles
+--------------------------------------------------------- */
+.main-portfolio-project .main-color {
+  background: #92FFE5; }
+
+.main-portfolio-project .secondary-color {
+  background: #7B68EE; }
+
+.main-portfolio-project .tertiary-color {
+  background: #292929; }
+
+.main-portfolio-project .tertiary-color-2 {
+  background: #533ae9; }
+
+.main-portfolio-project img {
+  display: block;
+  margin: 0 auto; }
+
+.main-portfolio-project .project-layouts {
+  background: #F5F5F5;
+  padding: 1em 0 5em; }
+
 /* Accessibility
 --------------------------------------------------------- */
 .screen-reader-text {
@@ -594,7 +616,8 @@ body:not(.show-focus-outlines) [tabindex]:focus {
   clear: both; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  color: #292929; }
 
 h1, h2 {
   font-family: Work Sans, sans-serif;
@@ -767,6 +790,9 @@ header {
 
 /* About Me Section
 --------------------------------------------------------- */
+.about-page footer {
+  margin-top: 8em !important; }
+
 .about-header {
   margin-bottom: 3em; }
 
@@ -877,13 +903,13 @@ header {
   fill: rgba(0, 0, 0, 0.8);
   fill: rgba(146, 255, 229, 0.7); }
 
-/* Footer & Contact Section
+/* Footer/Contact Section
 --------------------------------------------------------- */
 .contact {
   margin: 2em 1.2em 0;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-top: 1px solid #333333;
+  border-top: 1px solid #5c5c5c;
   text-align: center; }
 
 @media (min-width: 768px) {
