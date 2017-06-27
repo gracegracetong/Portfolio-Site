@@ -53,9 +53,8 @@
 			<div class="screenshot-container">
 				<img class="white-bg-shadow" src="images/project-machu-picchu/machu-picchu-full-site.jpg" alt="Fullpage screenshot of Mason Architects website design">
 			</div>
-
-			<a href="index.php#work" class="view-live view-more">view more projects</a>
-		</section>		
+		</section>	
+		<a href="index.php#work" class="view-live view-more">view more projects</a>	
 
 	<!-- Scroll to Top -->
 	<a href="javascript:" class="scroll-to-top" id="top" aria-hidden="true">

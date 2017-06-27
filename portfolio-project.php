@@ -29,7 +29,7 @@
 			</h3>
 			<p>For my portfolio website, I wanted to reflect my personal design style while presenting my work in a clear, logical manner. I designed the site <span class="underline">mobile first</span> and gradually added style and functionality to larger screens. <span class="underline">Gulp</span> was used to automate tasks such as adding prefixes and minifying files. You can check out the code for this website on my github (linked below).</p>
 
-			<a href="https://github.com/gracegracetong/Portfolio-Site" class="view-live">view on github</a>
+			<a href="https://github.com/gracegracetong/Portfolio-Site" class="view-live git">view on github</a>
 		</section>
 
 		<section class="project-styles">

@@ -27,7 +27,7 @@
 			<h3 class="tools">
 				HTML | CSS | JQUERY | PHOTOSHOP
 			</h3>
-			<p>To reflect the studio's clean and modern architectural style, the website design is layed out in a way that emphasizes whitespace and minimalist elements. The color palette was selected to give a simple and calm ambience to the site, which is further reflected in the imagery used.</p>
+			<p>To reflect the studio's clean and modern architectural style, the website design is layed out in a way that emphasizes whitespace and minimalist elements. The color palette was selected to give a simple and calm ambience to the site, which is further reflected in the imagery used. Close attention was paid to ensure that the site displays well across multiple screen sizes, and flex was used in the footer for responsive reflowing.</p>
 
 			<a href="http://gtong.htpwebdesign.ca/mason-architects" class="view-live">view live</a>
 		</section>

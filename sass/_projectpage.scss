@@ -67,12 +67,10 @@
 	width: 50%;
 	max-width: 360px;
 	padding: 0.5em;
-	margin-top: 1em;
+	margin: 1.5em auto 1em;
 	text-align: center;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
 	color: $mainColor;
+	display: block;
 	transition: background-color 500ms ease;
 	font: {
 		family: $navFont;
@@ -84,12 +82,16 @@
 	}
 }
 
+.git {
+	margin-top: 1em;
+}
+
 .view-more {
-	margin-top: 2.5em;
+	margin-top: 4em;
 }
 
 .project-styles {
-	margin-top: 8em;
+	margin-top: 3em;
 	h2 {
 		margin-top: 1.5em;
 	}
@@ -128,8 +130,7 @@
 }
 
 .project-page footer{
-	margin-top: 10em !important;
-	// border-top: 0 !important;
+	margin-top: 6em !important;
 }
 
 
@@ -199,9 +200,6 @@
 	}
 	.screenshot-container{
 		margin-bottom: 2em;
-	}
-	.view-more{
-		margin-top: 5.5em;
 	}
 
 	.main-color{

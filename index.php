@@ -112,7 +112,6 @@
 						</div>
 					</a>
 				</div>
-
 				
 
 				<!-- <div class="grid-item">

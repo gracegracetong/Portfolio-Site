@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Grace Tong</title>
 	<link rel="stylesheet" href="dist/styles.min.css" type="text/css" media="all">
+	<!-- <link rel="stylesheet" href="styles/styles.css" type="text/css" media="all"> -->
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500|Roboto+Mono:300,500" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.ico"/>

@@ -52,9 +52,9 @@
 			<div class="screenshot-container">
 				<img src="images/project-plant-tutorials/javascript-plants-mockup-browser-long.png" alt="Screenshots of the Plant Tutorial Site">
 			</div>
-			
-			<a href="index.php#work" class="view-live view-more">view more projects</a>
 		</section>
+		
+		<a href="index.php#work" class="view-live view-more">view more projects</a>
 
 
 	<!-- Scroll to Top -->
