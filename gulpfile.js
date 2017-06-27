@@ -5,6 +5,8 @@ var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var cleanCSS = require('gulp-clean-css');
+var concat = require('gulp-concat');
+
 
 // sass, autoprefixer
 gulp.task('sass', function(){
@@ -24,6 +26,7 @@ gulp.task('sass', function(){
     }))
 });
 
+
 // browsersync
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -34,7 +37,8 @@ gulp.task('browserSync', function() {
   })
 })
 
-// watch sass, browsersync
+
+// MAIN WATCH TASK: watch sass, browsersync
 gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('sass/**/*.scss', ['sass']); 
   gulp.watch('*.html', browserSync.reload); 
@@ -42,12 +46,15 @@ gulp.task('watch', ['browserSync', 'sass'], function(){
   gulp.watch('js/**/*.js', browserSync.reload); 
 })
 
+
 // minify css
 gulp.task('minify-css', function() {
   return gulp.src('styles/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(concat('styles.min.css'))
     .pipe(gulp.dest('dist'));
 });
+
 
 // minify js
 gulp.task('minify-js', function() {
@@ -55,10 +62,18 @@ gulp.task('minify-js', function() {
     .pipe(minify({
         ext:{
             src:'-debug.js',
-            min:'.js'
+            min:'.min.js'
         },
         exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js']
     }))
+    
     .pipe(gulp.dest('dist'))
 });
+
+
+// MAIN BUILD TASK: combine minify & rename tasks
+gulp.task('build', ['minify-css', 'minify-js'], function() {
+
+});
+

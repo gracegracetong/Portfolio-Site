@@ -25,10 +25,11 @@
 				A responsive portfolio website for my web design and<span class="no-break"> development work.</span> 
 			</h2>
 			<h3 class="tools">
-				HTML | SASS | JQUERY | PHP | GITHUB | ILLUSTRATOR 
+				HTML | SASS | JQUERY | PHP | GITHUB | ILLUSTRATOR | GULP
 			</h3>
-			<p>For my portfolio website, I wanted to</p>
+			<p>For my portfolio website, I wanted to reflect my personal design style while presenting my work in a clear, logical manner. I designed the site <span class="underline">mobile first</span> and gradually added style and functionality to larger screens. <span class="underline">Gulp</span> was used to automate tasks such as adding prefixes and minifying files. You can check out the code for this website on my github (linked below).</p>
 
+			<a href="https://github.com/gracegracetong/Portfolio-Site" class="view-live">view on github</a>
 		</section>
 
 		<section class="project-styles">
@@ -46,16 +47,15 @@
 			</div>	
 		</section>		
 
-		<section class="project-layouts">
+		<!-- <section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<!-- <img src="" alt="Browser screenshots of portfolio website design"> -->
 			</div>
-		</section>
+		</section> -->
 
 		<section class="responsive-layouts">
 			<h2>Mobile & Tablet</h2>
-			<img src="images/project-yaletown-dog/yaletown-dog-training-mobile-screens.jpg" alt="Tablet and Mobile View of the Website Design">
+			<img src="images/project-portfolio/portfolio-responsive-devices-2.jpg" alt="Tablet and Mobile View of the Website Design">
 			
 			<a href="index.php#work" class="view-live view-more">view more projects</a>
 		</section>

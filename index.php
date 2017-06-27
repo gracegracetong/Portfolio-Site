@@ -65,18 +65,6 @@
 					</a>
 				</div>
 
-				<div class="grid-item">
-					<a href="plant-tutorials.php">
-						<div class="thumbnail-overlay">
-							<div class="text-overlay">
-								<h3>Plant Tutorials</h3>
-								<p>Javascript & JQuery</p>
-							</div>	
-							<img src="images/javascript-tutorial-880x512.png" alt="Link to Project Page for Javascript Tutorial Site">
-						</div>
-					</a>
-				</div>
-
 				<div class="grid-item grid-sizer">
 					<a href="mason.php">
 						<div class="thumbnail-overlay">
@@ -90,28 +78,42 @@
 				</div>
 
 				<div class="grid-item">
-					<a href="machu-picchu.php">
+					<a href="plant-tutorials.php">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
-								<h3>Travel Machu Picchu</h3>
-								<p>Parallax & Animation</p>
-							</div>
-							<img src="images/machu-picchu-parallax-880x512.png" alt="Link to Project Page for Macchu Picchu Parallax Scrolling Site">
+								<h3>Plant Tutorials</h3>
+								<p>Javascript & JQuery</p>
+							</div>	
+							<img src="images/javascript-tutorial-880x512.png" alt="Link to Project Page for Javascript Tutorial Site">
 						</div>
 					</a>
 				</div>
-
-				<!-- <div class="grid-item">
+				
+				<div class="grid-item">
 					<a href="portfolio-project.php">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Personal Portfolio</h3>
 								<p>Site Design & Development</p>
 							</div>
-							<img src="images/coming-soon-mock.png" alt="Link to Project Page for Personal Portfolio">
+							<img src="images/portfolio-880x512.jpg" alt="Link to Project Page for Personal Portfolio">
 						</div>
 					</a>
-				</div> -->
+				</div>
+				
+				<div class="grid-item">
+					<a href="machu-picchu.php">
+						<div class="thumbnail-overlay">
+							<div class="text-overlay">
+								<h3>Travel Machu Picchu</h3>
+								<p>Parallax & Animation</p>
+							</div>
+							<img src="images/machu-picchu-project-880x512.jpg" alt="Link to Project Page for Macchu Picchu Parallax Scrolling Site">
+						</div>
+					</a>
+				</div>
+
+				
 
 				<!-- <div class="grid-item">
 					<a href="#">

@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /working-files/
+Disallow: /old-html-ver/
+Disallow: package.json
+
