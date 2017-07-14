@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minify = require('gulp-minify');
 var cleanCSS = require('gulp-clean-css');
 var concat = require('gulp-concat');
+var imagemin = require('gulp-imagemin');
 
 
 // sass, autoprefixer
@@ -76,4 +77,12 @@ gulp.task('minify-js', function() {
 gulp.task('build', ['minify-css', 'minify-js'], function() {
 
 });
+
+
+// optimize images
+gulp.task('imagemin', () =>
+    gulp.src('images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
 

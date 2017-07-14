@@ -35,7 +35,7 @@
 		<section class="project-styles">
 			<h2>Color Palette</h2>
 			<div class="color-palette"> 	
-				<div class="tertiary-color-2 color"><p>#292929</p></div>	
+				<div class="tertiary-color-2 color"><p>#533AE9</p></div>	
 				<div class="main-color color"><p>#92FFE5</p></div>
 				<div class="secondary-color color"><p>#7B68EE</p></div>	
 				<div class="tertiary-color color"><p>#292929</p></div>	

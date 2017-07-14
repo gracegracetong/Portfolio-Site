@@ -29,7 +29,7 @@
 			</h3>
 			<p>This project consists of three different javascript tutorials with the aim of teaching beginner's Javascript and jQuery in a more enjoyable and visually interesting way. The tutorials are centered around the theme of growing plants, and code is provided below each example.</p>
 
-			<a href="http://gtong.htpwebdesign.ca/js-tutorials/" class="view-live">view live</a>
+			<a href="https://gracetongdesign.com/projects/js-tutorials/" class="view-live">view live</a>
 		</section>
 
 		<section class="project-styles">

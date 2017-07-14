@@ -114,17 +114,17 @@
 				</div>
 				
 
-				<!-- <div class="grid-item">
+				<div class="grid-item">
 					<a href="#">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Compass Card Mobile Prototype</h3>
 								<p>Redesign Process & Prototyping</p>
 							</div>
-							<img src="images/coming-soon-mock.png" alt="">
+							<img src="images/coming-soon-phone.jpg" alt="Coming Soon">
 						</div>
 					</a>
-				</div> -->
+				</div>
 								
 			</div>
 
