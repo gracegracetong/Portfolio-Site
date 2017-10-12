@@ -27,7 +27,7 @@
 			<h3 class="tools">
 				HTML | CSS | JQUERY | PHOTOSHOP
 			</h3>
-			<p>For this project, the goal was to create a single page scrolling website with a form. I experimented with skrollr, a javascript scrolling library, as well as css animations. The website is not responsive and is unavailable for viewing on mobile devices, as the focus was to experiment with parallax and animations.</p>
+			<p>For this project, the goal was to create a single page scrolling website with a form. I experimented with skrollr, a javascript scrolling library, as well as css animations. The website is <span class="highlight">non-responsive</span> and is unavailable for viewing on mobile devices, as the goal of the project was to experiment with parallax effects and CSS animations.</p>
 
 			<a href="https://gracetongdesign.com/projects/machu-picchu/" class="view-live">view live</a>
 		</section>

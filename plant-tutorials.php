@@ -27,7 +27,7 @@
 			<h3 class="tools">
 				JAVASCRIPT | JQUERY | HTML | CSS | ILLUSTRATOR
 			</h3>
-			<p>This project consists of three different javascript tutorials with the aim of teaching beginner's Javascript and jQuery in a more enjoyable and visually interesting way. The tutorials are centered around the theme of growing plants, and code is provided below each example.</p>
+			<p>This project consists of three different javascript tutorials with the aim of teaching beginner's Javascript and jQuery in a more enjoyable and visually interesting way. The tutorials are centered around the theme of growing plants, and code is provided below each example. Please note that the site is <span class="highlight">non-responsive</span>, as the focus of the project was on Javascript and JQuery.</p>
 
 			<a href="https://gracetongdesign.com/projects/js-tutorials/" class="view-live">view live</a>
 		</section>

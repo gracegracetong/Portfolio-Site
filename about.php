@@ -32,8 +32,11 @@
 			<p>
 				When I am not working on web projects, I can be found creating illustrations and graphics, looking up the latest technologies and gadgets, hanging out at coffee shops, biking around Stanley Park, and checking out new ramen spots. 
 			</p>
+			<br>
 
 		</section>
+		
+		<a href="https://gracetongdesign.com" class="view-live">back to home</a>
 
 
 <?php include('templates/footer.php'); ?>

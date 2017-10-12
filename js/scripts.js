@@ -9,6 +9,22 @@ const $nav = $('.main-nav');
 const $grid = $('.grid');
 
 
+/* Preloader
+------------------------------------------------------------------*/
+// $(document).ready(function(){
+// 	var preloaderFadeOutTime = 600;
+// 	function hidePreloader(){
+// 		var preloader = $('.spinner-wrapper');
+// 		preloader.fadeOut(preloaderFadeOutTime);
+		
+// 	}
+// });
+
+// $body.imagesLoaded( function() {
+//   // when images have loaded, high preloader
+//   hidePreloader();
+// });
+
 
 /* Mobile Nav
 ------------------------------------------------------------------*/
@@ -123,7 +139,7 @@ $(document).mousemove(function(e) {
 /* Scroll to top
 ------------------------------------------------------------------*/
 $(window).scroll(function() {
-    if ($(this).scrollTop() >= 100) {
+    if ($(this).scrollTop() >= 200) {
         $('#top').fadeIn('fast');
     } 
     else {
@@ -149,5 +165,14 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('click', function(e) {
   $('body').removeClass('show-focus-outlines');
 });
+
+
+
+
+
+
+
+
+
 
 
