@@ -10,10 +10,10 @@
 		<h1 class="title-underline">Mason Architects</h1>
 			<picture class="header-img">
 				<source media="(min-width: 1020px)" 
-						srcset="images/project-mason/white-minimalist-concrete-architecture-wide.jpg">
+						srcset="dist/images/project-mason/white-minimalist-concrete-architecture-wide.jpg">
 				<source media="(min-width: 650px)" 
-						srcset="images/project-mason/white-minimalist-concrete-architecture.jpg">	
-				<img src="images/project-mason/white-minimalist-concrete-architecture-crop.jpg" alt="Image of White Industrial Building Design">
+						srcset="dist/images/project-mason/white-minimalist-concrete-architecture.jpg">	
+				<img src="dist/images/project-mason/white-minimalist-concrete-architecture-crop.jpg" alt="Image of White Industrial Building Design">
 			</picture>
 		</div>
 	</header>
@@ -42,23 +42,23 @@
 
 			<h2>Style Tile</h2>
 			<div class="style-tile">
-				<img src="images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
+				<img src="dist/images/project-mason/styletile-mason-arch.png" alt="Mason Architects Style Tile">
 			</div>	
 		</section>		
 
 		<section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<img class="white-bg-shadow" src="images/project-mason/full-screenshot-mason-architects.png" alt="Fullpage screenshot of Mason Architects website design">
+				<img class="white-bg-shadow" src="dist/images/project-mason/full-screenshot-mason-architects.png" alt="Fullpage screenshot of Mason Architects website design">
 			</div>
 		</section>
 
 		<section class="responsive-layouts">
 			<h2>Mobile & Tablet</h2>
-			<img src="images/project-mason/tablet-iphone-mockup.png" alt="Tablet and Mobile View of the Website Design">
-			<img src="images/project-mason/responsive-mockups.png" alt="Image of responsive website on multiple screen sizes">
+			<img src="dist/images/project-mason/tablet-iphone-mockup.png" alt="Tablet and Mobile View of the Website Design">
+			<img src="dist/images/project-mason/responsive-mockups.png" alt="Image of responsive website on multiple screen sizes">
 
-			<a href="index.php#work" class="view-live view-more">view more projects</a>
+			<a href="https://gracetongdesign.com/#work" class="view-live view-more">view more projects</a>
 		</section>
 
 	</main>

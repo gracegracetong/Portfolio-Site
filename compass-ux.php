@@ -57,7 +57,7 @@
 
 		<a href="https://gracetongdesign.com/projects/compass-prototype" class="view-live">view prototype (best on mobile)</a>		
 		
-		<a href="index.php#work" class="view-live">view more projects</a>
+		<a href="https://gracetongdesign.com/#work" class="view-live">view more projects</a>
 
 
 	<!-- Scroll to Top -->

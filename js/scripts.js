@@ -9,23 +9,6 @@ const $nav = $('.main-nav');
 const $grid = $('.grid');
 
 
-/* Preloader
-------------------------------------------------------------------*/
-// $(document).ready(function(){
-// 	var preloaderFadeOutTime = 600;
-// 	function hidePreloader(){
-// 		var preloader = $('.spinner-wrapper');
-// 		preloader.fadeOut(preloaderFadeOutTime);
-		
-// 	}
-// });
-
-// $body.imagesLoaded( function() {
-//   // when images have loaded, high preloader
-//   hidePreloader();
-// });
-
-
 /* Mobile Nav
 ------------------------------------------------------------------*/
 // Show mobile dropdown nav on button click
@@ -82,14 +65,19 @@ $('a[href^="#"]').on('click',function (e) {
 
 	const target = this.hash;
 	const $target = $(target);
-
+	
 	$('html, body').stop().animate({
-	  'scrollTop': $target.offset().top - 70
-	}, 900, 'swing', function () {
-	  window.location.hash = 1+ target;
-	});
-});
+		'scrollTop': $target.offset().top
+	}, 900,'swing');
 
+	// version with added URL hash...
+
+	// $('html, body').stop().animate({
+	//   'scrollTop': $target.offset().top - 70
+	// }, 900, 'swing', function () {
+	//   window.location.hash = 1+ target;
+	// });
+});
 
 
 /* Masonry
@@ -165,14 +153,3 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('click', function(e) {
   $('body').removeClass('show-focus-outlines');
 });
-
-
-
-
-
-
-
-
-
-
-

@@ -50,11 +50,11 @@
 		<section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<img src="images/project-plant-tutorials/javascript-plants-mockup-browser-long.png" alt="Screenshots of the Plant Tutorial Site">
+				<img src="dist/images/project-plant-tutorials/javascript-plants-mockup-browser-long.png" alt="Screenshots of the Plant Tutorial Site">
 			</div>
 		</section>
 		
-		<a href="index.php#work" class="view-live view-more">view more projects</a>
+		<a href="https://gracetongdesign.com/#work" class="view-live view-more">view more projects</a>
 
 
 	<!-- Scroll to Top -->

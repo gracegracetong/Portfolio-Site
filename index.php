@@ -2,19 +2,11 @@
 
 <body>
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
-	<!--CSS Spinner-->
-	<!-- <div class="spinner-wrapper">
-		<div class="spinner">
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		</div>
-	</div> -->
 	
 	<header>
 		<div class="nav-wrapper centered clear">
 
-			<a href="index.php" class="logo">
+			<a href="https://gracetongdesign.com/" class="logo">
 				<svg id="graceLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.32825 35.87793">
 					<title>Grace Tong Logo</title>
 					<path class="letterG" d="M16.68115,11.88574V26.89258c0,4.74316-3.44189,7.751-8.68164,7.751A12.37418,12.37418,0,0,1,.99219,32.44238l1.6123-2.91406a8.47379,8.47379,0,0,0,5.17773,1.73633c2.97656,0,4.86816-1.64355,4.86816-4.2793V25.03223a5.99394,5.99394,0,0,1-5.271,2.60449c-4.40283,0-7.37939-3.22461-7.37939-8,0-4.68164,2.94531-7.875,7.25537-7.875a6.14243,6.14243,0,0,1,5.395,2.60449V11.88574Zm-4.03076,7.84375c0-2.79-1.79834-4.74316-4.40283-4.74316S3.84473,16.9707,3.81348,19.72949c.03125,2.791,1.79883,4.74414,4.43408,4.74414C10.85205,24.47363,12.65039,22.52051,12.65039,19.72949Z"/>
@@ -35,7 +27,7 @@
 			<nav class="main-nav" id="mainNav" role="navigation">
 				<ul>
 					<li><a href="#work" class="nav-underline">work</a></li>
-					<li><a href="about.php" class="nav-underline">about</a></li>
+					<li><a href="about" class="nav-underline">about</a></li>
 					<li><a href="#contact" class="nav-underline">contact</a></li>
 				</ul>
 			</nav>
@@ -59,7 +51,7 @@
 			<h2>
 				I'm a Front-End Web <span class="highlight no-break">Designer<i class="fa fa-magic" aria-hidden="true"></i></span> & <span class="highlight no-break">Developer<i class="fa fa-code" aria-hidden="true"></i></span> from <span class="no-break">Vancouver, B.C.</span>
 			</h2>
-			<p>I love building clean and vibrant websites that are engaging and functional. As a multi-disciplinary designer and developer, I am passionate about crafting joyful digital experiences that are human-centered. <a class="no-break read-more" href="about.php">Read more</a></p>
+			<p>I love building clean and vibrant websites that are engaging and functional. As a multi-disciplinary designer and developer, I am passionate about crafting joyful digital experiences that are human-centered. <a class="no-break read-more" href="about">Read more</a></p>
 		</section>
 
 		<!-- Latest Works Section -->
@@ -69,74 +61,74 @@
 				<div class="gutter-sizer"></div>
 
 				<div class="grid-item">
-					<a href="yaletown.php">
+					<a href="yaletown">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Yaletown Dog Training</h3>
 								<p>Client Project for Small Business</p>
 							</div>
-							<img src="images/yaletown-dog-training-880x512.jpg" alt="Link to Project Page for Yaletown Dog Training Client Website">
+							<img src="dist/images/yaletown-dog-training-880x512.jpg" alt="Link to Project Page for Yaletown Dog Training Client Website">
 						</div>
 					</a>
 				</div>
 
 				<div class="grid-item grid-sizer">
-					<a href="mason.php">
+					<a href="mason">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Mason Architects</h3>
 								<p>Responsive Site Design & Development</p>
 							</div>						
-							<img src="images/responsive-architecture-880x512.jpg" alt="Link to Project Page for Responsive Architecture Site">
+							<img src="dist/images/responsive-architecture-880x512.jpg" alt="Link to Project Page for Responsive Architecture Site">
 						</div>
 					</a>
 				</div>
 
 				<div class="grid-item">
-					<a href="plant-tutorials.php">
+					<a href="plant-tutorials">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Plant Tutorials</h3>
 								<p>Javascript & JQuery</p>
 							</div>	
-							<img src="images/javascript-tutorial-880x512.png" alt="Link to Project Page for Javascript Tutorial Site">
+							<img src="dist/images/javascript-tutorial-880x512.png" alt="Link to Project Page for Javascript Tutorial Site">
 						</div>
 					</a>
 				</div>
 				
 				<div class="grid-item">
-					<a href="portfolio-project.php">
+					<a href="portfolio-project">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Personal Portfolio</h3>
 								<p>Site Design & Development</p>
 							</div>
-							<img src="images/portfolio-880x512.jpg" alt="Link to Project Page for Personal Portfolio">
+							<img src="dist/images/portfolio-880x512.jpg" alt="Link to Project Page for Personal Portfolio">
 						</div>
 					</a>
 				</div>
 				
 				<div class="grid-item">
-					<a href="machu-picchu.php">
+					<a href="machu-picchu">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Travel Machu Picchu</h3>
 								<p>Parallax & Animation</p>
 							</div>
-							<img src="images/machu-picchu-project-880x512.jpg" alt="Link to Project Page for Macchu Picchu Parallax Scrolling Site">
+							<img src="dist/images/machu-picchu-project-880x512.jpg" alt="Link to Project Page for Macchu Picchu Parallax Scrolling Site">
 						</div>
 					</a>
 				</div>
 				
 
 				<div class="grid-item">
-					<a href="compass-ux.php">
+					<a href="compass-ux">
 						<div class="thumbnail-overlay">
 							<div class="text-overlay">
 								<h3>Compass Redesign: Mobile Reloading</h3>
 								<p>UX Design & Prototyping</p>
 							</div>
-							<img src="images/compass-ux-redesign-880x512.png" alt="Link to Project Page for Compass Mobile Reloading UX Design Project">
+							<img src="dist/images/compass-ux-redesign-880x512.png" alt="Link to Project Page for Compass Mobile Reloading UX Design Project">
 						</div>
 					</a>
 				</div>

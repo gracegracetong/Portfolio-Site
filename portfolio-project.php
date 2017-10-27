@@ -47,17 +47,11 @@
 			</div>	
 		</section>		
 
-		<!-- <section class="project-layouts">
-			<h2>Layout + Design</h2>
-			<div class="screenshot-container">
-			</div>
-		</section> -->
-
 		<section class="responsive-layouts">
 			<h2>Mobile & Tablet</h2>
 			<img src="images/project-portfolio/portfolio-responsive-devices-2.jpg" alt="Tablet and Mobile View of the Website Design">
 			
-			<a href="index.php#work" class="view-live view-more">view more projects</a>
+			<a href="https://gracetongdesign.com/#work" class="view-live view-more">view more projects</a>
 		</section>
 
 

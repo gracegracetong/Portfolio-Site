@@ -10,10 +10,10 @@
 		<h1 class="title-underline">Yaletown Dog Training</h1>
 			<picture class="header-img">
 				<source media="(min-width: 1020px)" 
-						srcset="images/project-yaletown-dog/yaletown-training-puppy-wide.jpg">
+						srcset="dist/images/project-yaletown-dog/yaletown-training-puppy-wide.jpg">
 				<source media="(min-width: 650px)" 
-						srcset="images/project-yaletown-dog/yaletown-training-puppy.jpg">
-				<img src="images/project-yaletown-dog/yaletown-training-puppy-crop.jpg" alt="Image of Sleeping Shih Tzu Puppy">
+						srcset="dist/images/project-yaletown-dog/yaletown-training-puppy.jpg">
+				<img src="dist/images/project-yaletown-dog/yaletown-training-puppy-crop.jpg" alt="Image of Sleeping Shih Tzu Puppy">
 			</picture>
 		</div>
 	</header>
@@ -43,7 +43,7 @@
 
 			<h2>Style Tile</h2>
 			<div class="style-tile">
-				<img src="images/project-yaletown-dog/styletile-yaletown-dog-2.png" alt="Yaletown Dog Training Style Tile">
+				<img src="dist/images/project-yaletown-dog/styletile-yaletown-dog-2.png" alt="Yaletown Dog Training Style Tile">
 			</div>	
 		</section>
 
@@ -62,15 +62,15 @@
 		<section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<img src="images/project-yaletown-dog/yaletown-dog-training-browsers.png" alt="Browser screenshots of Yaletown Dog Training website design">
+				<img src="dist/images/project-yaletown-dog/yaletown-dog-training-browsers.png" alt="Browser screenshots of Yaletown Dog Training website design">
 			</div>
 		</section>
 
 		<section class="responsive-layouts">
 			<h2>Mobile & Tablet</h2>
-			<img src="images/project-yaletown-dog/yaletown-dog-training-mobile-screens.jpg" alt="Tablet and Mobile View of the Website Design">
+			<img src="dist/images/project-yaletown-dog/yaletown-dog-training-mobile-screens.jpg" alt="Tablet and Mobile View of the Website Design">
 			
-			<a href="index.php#work" class="view-live view-more">view more projects</a>
+			<a href="https://gracetongdesign.com/#work" class="view-live view-more">view more projects</a>
 		</section>
 
 

@@ -36,7 +36,7 @@
 			<h2>Color Palette</h2>
 			<div class="color-palette">	
 				<div class="tertiary-color-2 color"><p>#000000</p></div>
-				<div class="tertiary-color color"><p>#B6C6D6</p></div>	
+				<div class="tertiary-color color"><p>#2A3D17</p></div>	
 				<div class="main-color color"><p>#494949</p></div>				
 				<div class="secondary-color color"><p>#FFFFF</p></div>
 					
@@ -51,10 +51,10 @@
 		<section class="project-layouts">
 			<h2>Layout + Design</h2>
 			<div class="screenshot-container">
-				<img class="white-bg-shadow" src="images/project-machu-picchu/machu-picchu-full-site.jpg" alt="Fullpage screenshot of Mason Architects website design">
+				<img src="images/project-machu-picchu/machu-picchu-browser-previews.png" alt="Various screenshots of Machu Picchu site">
 			</div>
 		</section>	
-		<a href="index.php#work" class="view-live view-more">view more projects</a>	
+		<a href="https://gracetongdesign.com/#work" class="view-live view-more">view more projects</a>	
 
 	<!-- Scroll to Top -->
 	<a href="javascript:" class="scroll-to-top" id="top" aria-hidden="true">
