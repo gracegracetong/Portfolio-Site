@@ -1,6 +1,6 @@
 <?php include('templates/header.php');  ?>
 
-<body>
+<body class="animate-in">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	
 	<header>
@@ -49,7 +49,7 @@
 		<section class="intro centered" id="intro">
 			<h1>Hello! I'm Grace</h1>
 			<h2>
-				I'm a Front-End Web <span class="highlight no-break">Designer<i class="fa fa-magic" aria-hidden="true"></i></span> & <span class="highlight no-break">Developer<i class="fa fa-code" aria-hidden="true"></i></span> from <span class="no-break">Vancouver, B.C.</span>
+				I'm a Front-End Web <span class="highlight no-break">Developer<i class="fa fa-code" aria-hidden="true"></i></span> & <span class="highlight no-break">Designer<i class="fa fa-magic" aria-hidden="true"></i></span> from <span class="no-break">Vancouver, B.C.</span>
 			</h2>
 			<p>I love building clean and vibrant websites that are engaging and functional. As a multi-disciplinary designer and developer, I am passionate about crafting joyful digital experiences that are human-centered. <a class="no-break read-more" href="about">Read more</a></p>
 		</section>

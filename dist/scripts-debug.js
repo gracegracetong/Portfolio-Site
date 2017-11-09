@@ -9,6 +9,13 @@ const $nav = $('.main-nav');
 const $grid = $('.grid');
 
 
+/* Page transitions
+------------------------------------------------------------------*/
+window.addEventListener("beforeunload", function () {
+  document.body.classList.add("animate-out");
+});
+
+
 /* Mobile Nav
 ------------------------------------------------------------------*/
 // Show mobile dropdown nav on button click

@@ -1,6 +1,6 @@
 <?php include('templates/header.php');  ?>
 
-<body class="about-page">
+<body class="about-page animate-in">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	
 	<header class="project-header">
