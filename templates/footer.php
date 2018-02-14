@@ -22,7 +22,7 @@
 
 			<a href="https://codepen.io/gracetong"><span class="screen-reader-text">Codepen</span><i class="fa fa-codepen fa-lg" aria-hidden="true"></i></a>	
 
-			<a href="https://www.behance.net/gracetong"><i class="fa fa-behance fa-lg" aria-hidden="true"></i></a>	
+			<a href="https://www.behance.net/gracetong"><span class="screen-reader-text">Behance</span><i class="fa fa-behance fa-lg" aria-hidden="true"></i></a>	
 		</div>		
 		<p class="copyright"><span class="screen-reader-text">copyright</span><i class="fa fa-copyright" aria-hidden="true"></i>2017 Grace Tong</p>	
 	</footer>

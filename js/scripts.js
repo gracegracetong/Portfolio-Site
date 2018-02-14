@@ -11,8 +11,8 @@ const $grid = $('.grid');
 
 /* Page transitions
 ------------------------------------------------------------------*/
-window.addEventListener("beforeunload", function () {
-  document.body.classList.add("animate-out");
+window.addEventListener('beforeunload', function () {
+  document.body.classList.add('animate-out');
 });
 
 
@@ -25,6 +25,14 @@ $btnMenu.click(function(){
 	$body.toggleClass('show-mobile-nav');
 	$btnMenu.toggleClass('animate');
 	// $navWrapper.toggleClass('opaque');
+	if ($btnMenu.attr('aria-expanded') == 'false') { 
+	    $btnMenu.attr('aria-expanded', 'true');
+	   // $btnMenu.focus();
+	}
+	else { 
+		$btnMenu.attr('aria-expanded', 'false');
+	}
+
 });
 
 // Auto close dropdown nav when window is resized larger
@@ -37,7 +45,8 @@ function myWinWidth() {
     if(winWidth >= 600){
              $body.removeClass('show-mobile-nav');  
              $btnMenu.removeClass('animate');
-             // $navWrapper.removeClass('opaque');        
+             // $navWrapper.removeClass('opaque');  
+             $btnMenu.attr('aria-expanded', 'false');      
     }
 	return false;
 };
@@ -48,6 +57,7 @@ $('#mainNav a').click(function() {
 		$body.removeClass('show-mobile-nav');
 		$btnMenu.removeClass('animate');
 		// $navWrapper.removeClass('opaque'); 
+		$btnMenu.attr('aria-expanded', 'false');
 	};
 });
 

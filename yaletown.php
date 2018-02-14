@@ -27,7 +27,9 @@
 			<h3 class="tools">
 				WORDPRESS | SASS | JQUERY | GITHUB | PHP | PHOTOSHOP
 			</h3>
-			<p>Yaletown Dog Training is a company started by Sarah Pennington, a local dog trainer, coach, and mentor. Our team consisted of 3 team members, and the scope of the project was to fully redesign her current website to a brighter, more modern design while updating the layout and functionality of all pages. The client wanted more flexibility to add content to her site, and as a result we went with WordPress. SASS was used to keep our code DRY and Github was used for version control.</p>
+			<p>Yaletown Dog Training is a company started by Sarah Pennington, a local dog trainer, coach, and mentor. Our team consisted of 3 team members, and the scope of the project was to fully redesign her current website to a brighter, more modern design while updating the layout and functionality of all pages. 
+
+			Other than updating the overall design, our goal was to increase interactivity with the site and increase page flexibility for the client to make her own changes. SASS was used to keep our code DRY and Github was used for version control.</p>
 
 			<a href="http://yaletowndogtraining.com" class="view-live">view live</a>
 			<!-- <a href="https://github.com/htpwebdesign/Yaletown" class="view-live git">view on github</a> -->

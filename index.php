@@ -17,7 +17,7 @@
 				</svg>
 			</a>
 			
-			<button class="btnMenu" role="button">
+			<button class="btnMenu" role="navigation" aria-expanded="false">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -51,7 +51,7 @@
 			<h2>
 				I'm a Front-End Web <span class="highlight no-break">Developer<i class="fa fa-code" aria-hidden="true"></i></span> & <span class="highlight no-break">Designer<i class="fa fa-magic" aria-hidden="true"></i></span> from <span class="no-break">Vancouver, B.C.</span>
 			</h2>
-			<p>I love building clean and vibrant websites that are engaging and functional. As a multi-disciplinary designer and developer, I am passionate about crafting joyful digital experiences that are human-centered. <a class="no-break read-more" href="about">Read more</a></p>
+			<p>I love building clean and vibrant websites that are engaging and functional. As a multi-disciplinary designer and developer, I am passionate about crafting joyful digital experiences that are human-centered. <a class="no-break read-more" href="about">Read more <span class="screen-reader-text">about Grace's background</span></a></p>
 		</section>
 
 		<!-- Latest Works Section -->
